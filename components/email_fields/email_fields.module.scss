@@ -1,0 +1,139 @@
+//@import "compass";
+
+.mainContainer{
+    padding-bottom: 2rem;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+$red: #e74c3c;
+
+
+
+.container {
+align-items: top center;
+}
+
+
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.right { width: 50%; }
+
+.left {
+     margin-right: 2%; 
+}
+
+
+@media (max-width: 480px) {
+  .half {
+     width: 100%; 
+     float: none;
+     margin-bottom: 0; 
+  }
+}
+
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+  padding: 1em;
+  box-sizing:box-sizing(border-box); 
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.selectfield, .textfield, .contenttextfield, .button, .contenttextfield{
+  width:20rem;
+  max-width: 80%;
+  
+}
+
+.selectfield, .textfield, .contenttextfield{
+  font-family: "Open Sans";
+ 
+  margin-left: 1rem; 
+  margin-right: 1rem;
+  padding-left: 1rem; 
+  padding-right: 1rem;
+  font-size: 1rem;
+  
+  border-radius: 1rem;
+  background-color: rgba(235, 235, 235);
+  border: none;
+  border-radius:0.3rem;
+  
+}
+.selectfield{
+  color: rgba(50, 50, 50,0.7);
+}
+
+.textfield, .selectfield{
+  margin-bottom:1rem;
+  height: 3rem;
+  max-height: 6vh;
+}
+.contenttextfield{
+  padding: 0.5rem; 
+
+  max-height: 15vh;
+  height: 10rem;
+}
+
+
+
+.selectfield, .textfield:focus, .contenttextfield:focus{
+  border:none;
+  outline-width:0 ;
+}
+
+.select_option {
+  background-color:white; 
+  color:black; 
+  cursor: pointer;
+
+} 
+.select_option:hover{
+
+  background-color:rgba(200, 200, 200); 
+  outline-color: rgba(255, 255, 255);
+  
+  box-shadow: 0 0 10px 100px #fff inset;
+    } 
+
+
+
+    .button{
+      padding:auto;
+      overflow: hidden;
+     
+      margin-bottom:2rem;
+      height: 5rem;
+     max-height: 8vh;
+      background-color: #4CAF50;
+      border: none;
+      font-size: 1.5rem;
+      color: white;
+      border-radius:2rem;
+      text-align: center;
+      transition: 0.2s;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    
+    .button:after {
+      outline-width:0 ;
+      background-color: rgba(125, 125, 125);
+     
+    }
+    
+    .button:hover {
+      background-color: rgba(125, 125, 125);
+    } 

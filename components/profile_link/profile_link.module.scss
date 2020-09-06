@@ -1,0 +1,93 @@
+// components/Header.scss
+// https://codepen.io/sebastianbando/details/POyVqL
+
+/* 
+ * horisontal menu
+ *
+ */
+.profileLink{
+  padding:0 0.5rem;
+  display: inline-block;
+
+}
+
+@media only screen and (min-width: 45rem) {
+  .profileLink{
+    padding:0 2rem;
+  }
+}
+
+
+ .row{
+  display:inline-block;
+ }
+
+
+  /* w3schools horizontal menu */
+ 
+  
+  
+  /* 
+   * Content
+   *
+   */
+ 
+  
+  
+  .sb_table {
+    align-items: right;
+    max-width: 80%;
+    align-items: right;
+    border-radius: 30px;
+    background-color: rgba(255,255,255,0.1);
+    padding-left:0.3em;
+    padding-right:0.3em;
+
+    display:inline-block;
+    width:2.1em;
+    height:2.1em;
+    margin:0em 0.3em;
+    transition: 0.5s;
+  }
+  .sb_table:hover, .sb_table:focus{
+    background-color: rgba(255,255,255,0.2);
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+  }
+  .sb_table_cell {
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+    width:2.1em;
+    height:2.1em;
+  }
+  .social_media_link{
+    transition: 0.5s;
+  
+  }
+  .social_media_link:link,
+  .social_media_link:visited,
+  .social_media_link:active {
+    color:white;
+    display:inline-block;
+ 
+  }
+  .social_media_link:hover {
+    color:cyan;
+    text-decoration:none;
+  }
+  .button_box {
+    margin: 30px auto;
+  }
+  
+
+  
+  .intersection {
+    height:50px;
+    background-color:#232323;
+  }
+
+  
+  
+  
+ 

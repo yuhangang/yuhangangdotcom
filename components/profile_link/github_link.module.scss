@@ -1,0 +1,83 @@
+.innerBox{ 
+    width: 3.5rem;
+     height: 3rem; 
+     padding: 0.4rem 0.2rem; 
+     align-items: left; 
+     text-align: left;
+     float:left; 
+}
+.title{
+    text-shadow: none;
+    font-weight: 500;
+    padding: 0.5rem 0.3rem; 
+    color:rgba(255,255,255,0.9);
+    width:12rem;
+    height:3rem;
+    line-height: 1.7rem;
+   float: right; 
+   text-align: left; 
+   vertical-align: middle;
+   align-items: center;
+}
+
+
+
+
+.homeButton {
+    top: 1;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  
+  position: absolute;
+  
+    z-index: 9999;
+    margin: 20vh auto;
+    font-size: 24px;
+    align-items: center;
+    text-align: center;
+    width: 20rem;
+    max-width: 80%;
+  
+    height: 3rem;
+    line-height: 3rem;
+    border-radius: 2rem;
+
+    font-weight: 450;
+    backdrop-filter: blur(10px);
+    background-position: left center;
+    background-size: 200% 100%;
+    border-radius: 50px;
+    //moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(to right, #4b76a3, #485563, #2b5876, #4e4376);
+  
+    box-shadow: 0 10px 15px 0 rgba(45, 54, 65, 0.75);
+  }
+  
+  .homeButton:hover {
+    background-position: right center;
+    //opacity: 0.9;
+    background-position: 100% 0;
+    //moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  
+  }
+  
+  @media screen and (max-width: 100rem) {
+  
+    .homeButton {
+      margin: 15vh auto;
+    }
+  }
+  
+  @media screen and (max-width: 45rem) {
+  
+    .homeButton {
+      margin: 5vh auto;
+    }
+  }

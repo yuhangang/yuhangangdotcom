@@ -1,0 +1,139 @@
+/* -------------------------------------
+ * For horizontal version, set the
+ * $vertical variable to false
+ * ------------------------------------- */
+/* -------------------------------------
+ * General Style
+ * ------------------------------------- */
+
+
+/* -------------------------------------
+ * timeline
+ * ------------------------------------- */
+
+ .eduItem, .eduLink{
+  padding:  0.2rem 0;
+}
+.eduLink{
+  color:rgba(200,220,255);
+}
+
+.eduLink:hover{
+  text-decoration: underline;
+  color:rgba(200,220,255,0.7);
+}
+
+ .timeLineTitle{
+   align-items: left;
+    text-align: left;
+  }
+ 
+ 
+
+   
+
+ .timeLine{
+  width:50rem;
+  max-width: 95vw;
+ }
+.timeLineBG{
+  font-size: 16px;
+background-color:rgba(255,255,255,0.1);
+margin:0.5rem;
+border-radius: 0.2rem;
+backdrop-filter: 10px;
+width:50rem;
+}
+
+.work,.skills{
+  position: relative;
+  margin-right: 5%;
+  width:45rem;
+  max-width: 100%;
+  
+  text-align: left;
+  color:white;
+    position: relative;;
+    transition: 0.5s;
+    padding-bottom:3rem;
+    
+}
+
+.skillsTable{
+  margin-top:1rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto-fill, 60px);
+
+}
+@media screen and (max-width: 45rem) {
+  
+  .skillsTable {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.skillsItem{
+  width:160px;
+  display: inline-block;
+}
+.skillsItem h4{
+  height:40px;
+  width:50px;
+  float:left;
+  margin:10px 20px;
+  padding:auto;
+ 
+}
+
+.skills h3{
+  margin-top:1vh;
+  margin-bottom:0rem;
+}
+
+.skills h4{
+  align-self:center;
+  margin-top: 1.5vh;
+
+  margin-bottom:1vh;
+  margin-right:2rem; 
+}
+.skills img{
+float:left;
+  padding:0px;
+  overflow:visible;
+  margin-bottom:5px;
+ 
+
+  width:40px;
+  height: 40px;
+  transition:0.2s;
+}
+
+.dateColor{
+  text-align: left;
+  font-weight:200;
+  color:rgba(255,255,255,0.7);
+}
+
+.content{
+  display: inline-block;
+  border-width: 2 2 2px;
+    border-style: solid;
+
+}
+
+
+
+/* -------------------------------------
+ * For horizontal version, set the
+ * $vertical variable to false
+ * ------------------------------------- */
+/* -------------------------------------
+ * General Style
+ * ------------------------------------- */
+
+
+
+ 

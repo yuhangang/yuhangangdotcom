@@ -1,0 +1,92 @@
+{
+  "polyfillFiles": [
+    "static/chunks/polyfills-e5012cf49fbb0a2642db.js"
+  ],
+  "devFiles": [],
+  "ampDevFiles": [],
+  "lowPriorityFiles": [
+    "static/CiOP4IgDuzaSrMDkBPb-Z/_buildManifest.js",
+    "static/CiOP4IgDuzaSrMDkBPb-Z/_ssgManifest.js"
+  ],
+  "pages": {
+    "/": [
+      "static/chunks/main-28ded4eadb9e1445b8fc.js",
+      "static/chunks/webpack-e067438c4cf4ef2ef178.js",
+      "static/chunks/framework.1d36bc031662b4dc4c28.js",
+      "static/chunks/05d954cf.33e22acc86ef60c19656.js",
+      "static/chunks/commons.bb4b0de8d536a206fa3b.js",
+      "static/chunks/7e23be97ea5b8bebd848d0b6e03da9d3aeac285f.4223cfc121066958bd06.js",
+      "static/chunks/bfdcd02787cd8b1b8b4cd59338bc7165742e21eb.23e64079690fc4af0653.js",
+      "static/css/0a049f9828308bdafb5a.css",
+      "static/chunks/pages/index-307a39521fa8b059e392.js"
+    ],
+    "/_app": [
+      "static/chunks/main-28ded4eadb9e1445b8fc.js",
+      "static/chunks/webpack-e067438c4cf4ef2ef178.js",
+      "static/chunks/framework.1d36bc031662b4dc4c28.js",
+      "static/chunks/05d954cf.33e22acc86ef60c19656.js",
+      "static/chunks/commons.bb4b0de8d536a206fa3b.js",
+      "static/chunks/7e23be97ea5b8bebd848d0b6e03da9d3aeac285f.4223cfc121066958bd06.js",
+      "static/css/764ab32404d954dfeb2b.css",
+      "static/chunks/pages/_app-957a1234e8a009aaf0da.js"
+    ],
+    "/_error": [
+      "static/chunks/main-28ded4eadb9e1445b8fc.js",
+      "static/chunks/webpack-e067438c4cf4ef2ef178.js",
+      "static/chunks/framework.1d36bc031662b4dc4c28.js",
+      "static/chunks/commons.bb4b0de8d536a206fa3b.js",
+      "static/chunks/pages/_error-e16552a5e0e2d771084c.js"
+    ],
+    "/about": [
+      "static/chunks/main-28ded4eadb9e1445b8fc.js",
+      "static/chunks/webpack-e067438c4cf4ef2ef178.js",
+      "static/chunks/framework.1d36bc031662b4dc4c28.js",
+      "static/chunks/05d954cf.33e22acc86ef60c19656.js",
+      "static/chunks/commons.bb4b0de8d536a206fa3b.js",
+      "static/chunks/7e23be97ea5b8bebd848d0b6e03da9d3aeac285f.4223cfc121066958bd06.js",
+      "static/chunks/bfdcd02787cd8b1b8b4cd59338bc7165742e21eb.23e64079690fc4af0653.js",
+      "static/css/a1b49a4f090ca2704b16.css",
+      "static/chunks/397478985ce936e289f813beba6943dcbb96fc89_CSS.4d62413f4da81be1e932.js",
+      "static/css/91bba968ff54c09ebe72.css",
+      "static/chunks/pages/about-bae09aa593e97791ef42.js"
+    ],
+    "/projects": [
+      "static/chunks/main-28ded4eadb9e1445b8fc.js",
+      "static/chunks/webpack-e067438c4cf4ef2ef178.js",
+      "static/chunks/framework.1d36bc031662b4dc4c28.js",
+      "static/chunks/05d954cf.33e22acc86ef60c19656.js",
+      "static/chunks/commons.bb4b0de8d536a206fa3b.js",
+      "static/chunks/7e23be97ea5b8bebd848d0b6e03da9d3aeac285f.4223cfc121066958bd06.js",
+      "static/chunks/bfdcd02787cd8b1b8b4cd59338bc7165742e21eb.23e64079690fc4af0653.js",
+      "static/css/336ca17dada1ac6500c6.css",
+      "static/chunks/pages/projects-15e5a046f67a80ea3d59.js"
+    ],
+    "/theranos": [
+      "static/chunks/main-28ded4eadb9e1445b8fc.js",
+      "static/chunks/webpack-e067438c4cf4ef2ef178.js",
+      "static/chunks/framework.1d36bc031662b4dc4c28.js",
+      "static/chunks/05d954cf.33e22acc86ef60c19656.js",
+      "static/chunks/commons.bb4b0de8d536a206fa3b.js",
+      "static/chunks/7e23be97ea5b8bebd848d0b6e03da9d3aeac285f.4223cfc121066958bd06.js",
+      "static/chunks/bfdcd02787cd8b1b8b4cd59338bc7165742e21eb.23e64079690fc4af0653.js",
+      "static/css/a1b49a4f090ca2704b16.css",
+      "static/chunks/397478985ce936e289f813beba6943dcbb96fc89_CSS.4d62413f4da81be1e932.js",
+      "static/css/acbced034aa461c42af6.css",
+      "static/chunks/pages/theranos-63f8f4d62aba830db7f6.js"
+    ],
+    "/yuhangang.com": [
+      "static/chunks/main-28ded4eadb9e1445b8fc.js",
+      "static/chunks/webpack-e067438c4cf4ef2ef178.js",
+      "static/chunks/framework.1d36bc031662b4dc4c28.js",
+      "static/chunks/05d954cf.33e22acc86ef60c19656.js",
+      "static/chunks/commons.bb4b0de8d536a206fa3b.js",
+      "static/chunks/7e23be97ea5b8bebd848d0b6e03da9d3aeac285f.4223cfc121066958bd06.js",
+      "static/chunks/bfdcd02787cd8b1b8b4cd59338bc7165742e21eb.23e64079690fc4af0653.js",
+      "static/css/a1b49a4f090ca2704b16.css",
+      "static/chunks/397478985ce936e289f813beba6943dcbb96fc89_CSS.4d62413f4da81be1e932.js",
+      "static/css/acbced034aa461c42af6.css",
+      "static/chunks/pages/yuhangang.com-dd6a06e5b89a762ae5a0.js"
+    ]
+  },
+  "ampFirstPages": []
+}
