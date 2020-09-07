@@ -44,7 +44,7 @@ export default function Projects({}) {
       </Head>
       <DesNav />
       <motion.div variants={postVariants}>
-      <div className={styles.projectContainer}>dd
+      <div className={styles.projectContainer}>
       {slider}
         <div className={styles.bottomFixed}>
         

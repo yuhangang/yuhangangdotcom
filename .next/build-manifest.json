@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/xF6y9bEhrCTrZ9EzJ94D3/_buildManifest.js",
-    "static/xF6y9bEhrCTrZ9EzJ94D3/_ssgManifest.js"
+    "static/gC5EVbTatoWhESa9KgVdQ/_buildManifest.js",
+    "static/gC5EVbTatoWhESa9KgVdQ/_ssgManifest.js"
   ],
   "pages": {
     "/": [
@@ -59,7 +59,7 @@
       "static/chunks/7e23be97ea5b8bebd848d0b6e03da9d3aeac285f.4223cfc121066958bd06.js",
       "static/chunks/bfdcd02787cd8b1b8b4cd59338bc7165742e21eb.78c7c54114b80bf1c14c.js",
       "static/css/5151131e3a9e76427dc8.css",
-      "static/chunks/pages/projects-2a9996c2aa4058552176.js"
+      "static/chunks/pages/projects-c2da732b50f2008742d3.js"
     ],
     "/theranos": [
       "static/chunks/main-28ded4eadb9e1445b8fc.js",
