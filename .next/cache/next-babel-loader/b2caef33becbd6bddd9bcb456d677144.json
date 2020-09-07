@@ -1,1 +1,0 @@
-{"ast":null,"code":"import React from \"react\";\nvar __jsx = React.createElement;\nimport styles from './responsive.module.scss';\nexport default function ResponsiveComponent(children) {\n  return __jsx(\"div\", {\n    className: styles.responsivecomponent\n  }, children);\n}","map":null,"metadata":{},"sourceType":"module"}
