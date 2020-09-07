@@ -12,7 +12,7 @@ const EmailLinks =<div>contact : <a href="mailto: redrainhang@gmail.com" classNa
 
 const postVariants = {
   initial: { scale: 1, y: 0, opacity: 0.5 },
-  enter: { scale: 1, y: 0, opacity: 1, transition: { duration: 1, ease: [0.48, 0.15, 0.25, 0.96] } },
+  enter: { scale: 1, y: 0, opacity: 1, transition: { duration: 0.3, ease: [0.48, 0.15, 0.25, 0.96] } },
   exit: {
     scale: 1,
     y: 0,

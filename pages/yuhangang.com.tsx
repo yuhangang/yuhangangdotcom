@@ -37,7 +37,7 @@ export default function Home({
                My personal blog,
                the first website designed and developed by me. I choose Next.js as framework and wrote code in Typescript, all of the pages is static generated. The user interface is repsonsive which compatible with phones, tablet and PCs.
               
-               {GithubLink("https://github.com/angyuhang98/fhir-theranos")}
+               {GithubLink("https://github.com/yuhangang/yuhangangdotcom")}
                 </div>
               )
 

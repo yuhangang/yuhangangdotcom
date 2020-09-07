@@ -31,6 +31,7 @@ export default function NavBar1(): JSX.Element {
             <li><a href="/about">ABOUT</a></li>
             <li><a href="/projects">PROJECTS</a>
               <ul className={styles.navbar__sublinks}>
+              <li><a href="/projects">All Projects</a></li>
                 <li><a href="/yuhangang.com">yuhangang.com</a></li>
                 <li><a href="/theranos">Theranos</a></li>
               </ul>

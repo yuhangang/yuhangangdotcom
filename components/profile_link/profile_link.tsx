@@ -1,7 +1,7 @@
 
 import styles from './profile_link.module.scss';
 const twitter_url: string = 'https://twitter.com/angyuhang98';
-const github_url: string = 'https://github.com/angyuhang98';
+const github_url: string = 'https://github.com/yuhangang';
 const linkedin_url: string = 'https://www.linkedin.com/in/yuhang-ang-b8510010b/';
 const instagram_url: string = 'https://instagram.com/yuhangang';
 

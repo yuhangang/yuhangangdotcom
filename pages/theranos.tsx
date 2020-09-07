@@ -36,7 +36,7 @@ export default function Home({
                An Flutter App connecting FHIR server which stores electronic medical records, to implement login functionality.. The users able to select which patients
                he/she wants to monitor, and the app should show the latest total cholesterol and blood pressure values of the selected patients in both table and chart format.
                
-               {GithubLink("https://github.com/angyuhang98/fhir-theranos")}
+               {GithubLink("https://github.com/yuhangang/theranos")}
               
                 </div>
               )

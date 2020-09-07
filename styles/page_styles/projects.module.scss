@@ -101,3 +101,14 @@
     line-height: 120%;
   }
 }
+
+@media only screen and (max-width: 45rem) {
+  .projectIntroTile {
+    font-Size: 17px;
+    padding-Top: 20vh;
+  }
+
+  .projectIntroTile h1 {
+    line-height: 120%;
+  }
+}
