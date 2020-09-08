@@ -1,7 +1,7 @@
 import { AnimatePresence } from 'framer-motion';
 import Head from 'next/head';
 import { Router } from 'next/router';
-import NProgress from 'nprogress';
+import NProgress from 'nprogress/nprogress.js';
 import React from 'react';
 import '../styles/global.css';
 
