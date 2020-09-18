@@ -122,6 +122,7 @@
 }
 
 .homeButton:hover {
+  user-select: none;
   background-position: right center;
   //opacity: 0.9;
   background-position: 100% 0;

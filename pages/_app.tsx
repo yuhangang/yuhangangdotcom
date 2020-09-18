@@ -5,6 +5,7 @@ import NProgress from 'nprogress/nprogress.js';
 import React from 'react';
 import '../styles/global.css';
 
+
 Router.events.on('routeChangeStart', (url) => {
   console.log(`Loading: ${url}`)
   NProgress.start()

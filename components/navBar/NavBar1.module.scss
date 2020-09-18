@@ -393,7 +393,7 @@ visibility: center;
         display: flex;
         opacity: 1;
         transition: all 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-        transform: translateX(0);
+        //transform: translateY(0);
       }
 
       &:checked~.navbar__flex {
@@ -409,15 +409,16 @@ visibility: center;
     }
 
     &__links {
+      user-select: none;
       overflow:visible;
       position: static;
       backdrop-filter: blur(5px);
       width:100%;
-      transform: translateX(200%);
-      transition: all 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-      //display:none;
+      //transform: translateY(-200%);
       opacity: 0;
-      font-: 400;
+      transition: all 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+      display:none;
+      font-weight: 400;
       margin: 0;
       padding: 0;
       flex-direction: column;
