@@ -124,7 +124,6 @@ const theme = createMuiTheme({
     primary: {
       main: '#FFFFFFCC',
       light:'#666666',
-
     },
     secondary: {main:'#222222'},
   },
@@ -134,22 +133,7 @@ const theme = createMuiTheme({
 
 
 export default function ScrollToTop() {
-  const classes = useStyles();
-  const [open, setOpen] = React.useState(false);
-  const [hidden, setHidden] = React.useState(false);
 
-  const handleVisibility = () => {
-    setHidden((prevHidden) => !prevHidden);
-  };
-
-  const handleOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
-  
   return (
     <div className={styles.bottomRight}>
 

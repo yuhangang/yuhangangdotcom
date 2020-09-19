@@ -4,6 +4,7 @@ import React from 'react';
 import utilStyles from '../styles/utils.module.css';
 import styles from './layout.module.scss';
 import Nav from './navBar/NavBar';
+import Nav1 from './navBar/Nav';
 import ProfileLink from './profile_link/profile_link';
 import ScrollToTop from './scrollToTopButton/scrollToTopButton';
 const name = 'Yuhangang'

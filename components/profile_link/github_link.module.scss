@@ -30,7 +30,7 @@
     left: 0;
     right: 0;
   
-   position: fixed;
+   position: absolute;
   
     z-index: 9999;
     margin: 8vh 10vh;
@@ -41,6 +41,7 @@
     max-width: 90%;
   
     height: 3rem;
+    min-height: 3rem;
     line-height: 3rem;
     border-radius: 2rem;
 
@@ -68,7 +69,11 @@
     transition: all .4s ease-in-out;
   
   }
-  
+  html:not([data-scroll='0']) {
+    .homeButton {
+      position:fixed;
+    }
+  }
 
   @media screen and (max-width: 45rem) {
   

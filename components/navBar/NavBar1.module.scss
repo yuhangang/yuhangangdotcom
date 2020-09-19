@@ -3,7 +3,7 @@ $secondaryColor:rgba(85, 85, 85);
 
 .h3 {
 vertical-align: middle;
-  height: 50px;
+  height: 20px;
   width:100px;
   text-align: left;
   margin-bottom: 15px;
@@ -393,7 +393,7 @@ visibility: center;
         display: flex;
         opacity: 1;
         transition: all 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-        //transform: translateY(0);
+        transform: translateY(0);
       }
 
       &:checked~.navbar__flex {
@@ -414,10 +414,11 @@ visibility: center;
       position: static;
       backdrop-filter: blur(5px);
       width:100%;
-      //transform: translateY(-200%);
+      transform: translateY(-200%);
       opacity: 0;
       transition: all 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-      display:none;
+      display: flex;
+      //display:none;
       font-weight: 400;
       margin: 0;
       padding: 0;

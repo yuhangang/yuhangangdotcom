@@ -8,15 +8,6 @@
   height: 20vh;
   overflow: clip;
 }
-
-.SpeedDial {
-
-  bottom: 0;
-  z-index: 9999;
-  position: relative;
-
-}
-
 .BackButton {
   margin-right: 1.5rem;
   bottom: 0;
@@ -24,6 +15,16 @@
   position: relative;
 
 }
+
+@media screen and (max-width: 45rem) {
+
+  .BackButton {
+
+    margin-right: 2.5vw;
+  }
+}
+
+
 
 .scrollToTop {
   align-items: bottom right;
@@ -43,7 +44,7 @@
   justify-content: center;
   align-items: center;
   float: right;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255);
   backdrop-filter: blur(10px);
   border-radius: 5rem;
   width: 3.5rem;

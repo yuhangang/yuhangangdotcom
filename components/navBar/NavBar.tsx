@@ -6,17 +6,13 @@ import styles from './NavBar.module.scss'
 
 const DesNav = () => (
  
-    <div className={styles.topFixed} >
-      <div >
-
-      </div>
+  
       <div className={styles.sticky}>
-
         <NavBar1></NavBar1>
       </div>
 
 
-    </div>
+
 
   
 
