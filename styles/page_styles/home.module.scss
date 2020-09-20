@@ -48,6 +48,7 @@
 }
 
 .homeButton {
+  letter-spacing: 2px;
   box-shadow: 0 0 20px rgba(255,255,255,0.1), 0 0 20px rgba(255,255,255,.1);
   margin: 5px auto;
   font-size: 24px;
@@ -79,7 +80,8 @@
 
   .homeButton {
     margin: 3px 0;
-    font-size: 30px;
+    font-size: 24px;
+    
     display: inline-block;
     vertical-align: center;
     align-items: center;

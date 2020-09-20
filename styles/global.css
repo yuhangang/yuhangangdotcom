@@ -11,6 +11,7 @@ body {
   font-size: 16px;
   font-weight: 350;
   line-height: 150%;
+  letter-spacing:1px;
 }
 
 @media only screen and (max-width: 45rem) {
