@@ -40,7 +40,6 @@ export default function About({
                         </a>
                         <div className={styles.intro}>
                 Yu Hang Ang, 22, an final year computer science student from Monash University Malaysia. 
-                My interest. 
                 I'm currently working on my own projects in web app and mobiles app and looking forward to opportunities in software development and data science fields.
                   
                 </div>
@@ -59,7 +58,8 @@ export default function About({
             title="Experiences"
             items={[
               {
-                dateTime: "7/2020 - 8/2020", title: "Website Development", link: '/yuhangang.com'
+                dateTime: "7/2020 - 8/2020", title: "Website Development", link: '/yuhangang.com',
+                detail:"built my first personal website from scratch."
               },
               { dateTime: "4/2019 - 6/2020", title: "Flutter Application Development", link: '/theranos' ,
               detail:"In an Software development unit, collaborated with group mate to designed and developed an mobile application to tracking latest patients' data using flutter based on requirement."},

@@ -35,7 +35,7 @@ export default function Home({
                 <div className={styles.projectIntroTile}>
                   <h1>About This Website</h1>
                My personal blog,
-               the first website designed and developed by me. I choose Next.js as framework and wrote code in Typescript, all of the pages is static generated. The user interface is repsonsive which compatible with phones, tablet and PCs.
+               the first website designed and developed by me. I choose Next.js as framework and wrote code in Typescript, all of the pages is static generated. The user interface is responsive which compatible with phones, tablet and PCs.
               
                
                 </div>
@@ -53,11 +53,15 @@ export default function Home({
         {GithubLink("https://github.com/yuhangang/yuhangangdotcom")}
         {ResponsiveComponent([TimeLine({
           title: "Time Line",
-          items: [{
+          items: [
+            {
+              dateTime: "20/9/2020",title: "Fixed bugs and improve user interface",
+            },
+            {
             dateTime: "6/9/2020", title: "Publish of first version",
     
             detail: <div>
-         
+                Deployed website to Vercel
             </div>
           },
           {
@@ -73,8 +77,9 @@ export default function Home({
         <div>
           <h2>Learning Outcome</h2>
           <h3>What did I learn?</h3>
-          <ul>- Responsive UI/UX design</ul>
-          <ul>- Familiar with HTML and CSS/SASS</ul>
+          <ul>- Experience in Typescript for web development</ul>
+          <ul>- Responsive UI/UX design, improve user experience accross different screen sizes and ratios</ul>
+          <ul>- Familiar with HTML and CSS/SASS, built most components of this websites from scratch</ul>
           <ul>- build reusable components for React.js frameworks</ul>
           <ul></ul>
     

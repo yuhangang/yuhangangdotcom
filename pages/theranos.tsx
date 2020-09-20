@@ -33,7 +33,7 @@ export default function Home({
               {ResponsiveComponent(
                 <div className={styles.projectIntroTile}>
                   <h1>Theranos, a Flutter HealthCare app</h1>
-               An Flutter App connecting FHIR server which stores electronic medical records, to implement login functionality.. The users able to select which patients
+               An Flutter App connecting FHIR server which stores electronic medical records, to implement login functionality. The users able to select which patients
                he/she wants to monitor, and the app should show the latest total cholesterol and blood pressure values of the selected patients in both table and chart format.
                
               

@@ -83,12 +83,12 @@
   min-height: 10rem;
   border-radius: 10rem;
   transition: 0.5s;
-  border: solid 5px rgba(255, 255, 255, 0.1);
+  border: solid 4px rgba(255, 255, 255, 0.6);
   filter: rgba(255, 255, 255, 0.1);
 }
 
 .profileContainer:hover .profile_picture {
-  border: solid 5px rgba(255, 255, 255, 0.07);
+  border: solid 4px rgba(255, 255, 255, 0.3);
   filter: brightness(80%);
 }
 

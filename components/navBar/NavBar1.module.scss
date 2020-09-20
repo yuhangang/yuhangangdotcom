@@ -53,7 +53,7 @@ visibility: center;
     position: relative;
     padding: 1.5vh 5vw;
     max-width: 100%;
-    min-height: 75px;
+    min-height: 65px;
     margin-left: auto;
     margin-right: auto;
 
@@ -69,6 +69,7 @@ visibility: center;
     flex: 1 1 30%;
   }
   &__right {
+    padding-top: 10px;
     vertical-align: center;
     height: 50px;
     flex: 1 1 70%;
@@ -332,8 +333,20 @@ visibility: center;
   }
 }
 */
+.img{
+  height:60px;
+  width:250px;
+  padding-left:10px;
+}
 
 @media screen and (max-width: 65rem) {
+  .img{
+    height:45px;
+    width:200px;
+    padding-left:10px;
+  }
+
+  
   .h3 {
     font-size: 35px;
     vertical-align: middle;
@@ -356,8 +369,11 @@ visibility: center;
       position: fixed;
       z-index:9999;
       width:50%;
+      padding-top:2px;
+      padding-left: 10px;
     }
     &__right {
+      padding-top: 0px;
       position: fixed;
       z-index: 88;
       width:100%;

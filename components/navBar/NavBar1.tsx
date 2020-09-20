@@ -15,8 +15,8 @@ export default function NavBar1(): JSX.Element {
 
 
         <div className={styles.navbar__left}>
-
-          <Link href='/'><div className={styles.h3}>yuhangang</div></Link>
+         <a href="/"><img className={styles.img} src="/icons/logo.png"/>
+         </a> 
         </div>
 
 

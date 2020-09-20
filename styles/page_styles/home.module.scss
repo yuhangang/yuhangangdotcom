@@ -30,16 +30,19 @@
 }
 
 .mainContainerTitle {
+  user-select: none;
+  font-family: 'Audrey';
+  text-transform: uppercase;
   letter-spacing: 3px;
   text-shadow: 0 0 15px rgba(50,50,50,0.3), 0 0 10px rgba(50,50,50,.4);
   margin: 0 auto;
   margin-bottom: 20px;
   align-items: center;
   padding: 1rem 0;
-  line-height: 70px;
-  font-size: 70px;
+  line-height: 4rem;
+  font-size: 4rem;
   color: white;
-  font-weight: 500;
+
   cursor: pointer;
   
 }
@@ -57,7 +60,7 @@
   height: 3.1rem;
   line-height: 3.1rem;
   padding: 5px auto;
-  border-radius: 2rem;
+  border-radius: 5px;
   //border: 2px solid rgba(222,222,222);
   color: white;
   text-shadow: 2px 2px 5px rgba(75, 75, 75, 0.7);
@@ -70,6 +73,7 @@
   background-color: rgba(255, 255, 255, 0.3);
   //border: 2px solid #ffffff;
 }
+
 
 @media screen and (max-width: 45rem) {
 
@@ -103,19 +107,17 @@
   }
 
   .mainContainerTitle {
-    top: 0;
+
     width: 100%;
 
-    transition: 1s;
-    position: absolute;
-    text-align: center;
-    margin: 10vh auto;
-    line-height: 50px;
+    margin: 0 auto;
+    margin-bottom: 20px;
     align-items: center;
-    letter-spacing: 0.4;
+    padding: 1rem 0;
+    padding-right: 30%;
+    line-height: 50px;
     font-size: 50px;
     color: white;
-    cursor: pointer;
     
   }
   .mainContainerTitle{
