@@ -97,12 +97,14 @@
 
 
   .mainContainerItems {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(68, 49, 49, 0.3)), url('/images/IMG_6812.jpg') no-repeat;
-  }
-.placeholder{
-  padding-left: 5%;
+    padding-left: 5%;
     padding-right: 5%;
     padding-top: 40vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(68, 49, 49, 0.3)), url('/images/IMG_6812.jpg') no-repeat;
+    background-position: 60% 0%;
+    background-size: cover;
+  }
+.placeholder{
     position: absolute;
     height: 100%;
     width: 100%;
