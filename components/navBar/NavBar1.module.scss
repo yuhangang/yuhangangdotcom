@@ -197,7 +197,10 @@ visibility: center;
     width: 50px;
     height: 50px;
     background: url('/icons/ui/menu.svg') no-repeat;
-    transition: 0.5s;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    -ms-transition: -ms-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;  
+    
 
 
     background-size: cover;
@@ -407,6 +410,7 @@ visibility: center;
       display: flex;
 
       &:checked+.navbar__links {
+        
         display: flex;
         opacity: 1;
         transition: all 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
@@ -418,11 +422,8 @@ visibility: center;
         
       }
 
-      &:checked>.navbar__hamberger {
+  
 
-        transition: 0.5s;
-        background: url('/icons/ui/close.svg') no-repeat;
-      }
     }
 
     &__links {

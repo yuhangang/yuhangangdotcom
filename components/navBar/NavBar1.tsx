@@ -7,8 +7,15 @@ import Link from 'next/link';
 
 
 
-
 export default function NavBar1(): JSX.Element {
+  let navbarTogglerIcon = '/icons/ui/menu.svg';
+  function onOpenNavBar(){
+  var checkedValue = (document.getElementById("navbarToggler") as HTMLInputElement); 
+   navbarTogglerIcon = checkedValue.checked?  '/icons/ui/close.svg': '/icons/ui/menu.svg';
+   console.log(checkedValue.checked);
+   document.getElementById("navIcon").style.backgroundImage = "url("+navbarTogglerIcon+")";
+  }
+  
   return (
     <div className={`${styles.container}${styles.navbar__container}`}>
       <nav className={styles.navbar__flex}>
@@ -22,11 +29,11 @@ export default function NavBar1(): JSX.Element {
 
         <div className={styles.navbar__right}>
 
-          <label htmlFor="navbarToggler" className={styles.navbar__toggler__label}>
+          <label htmlFor="navbarToggler" className={styles.navbar__toggler__label} >
 
-            <span className={styles.navbar__hamberger}></span>
+            <span className={styles.navbar__hamberger} id='navIcon'></span>
           </label>
-          <input type="checkbox" name="" className={styles.navbar__toggler__input} id="navbarToggler" />
+          <input type="checkbox" name="" className={styles.navbar__toggler__input} id="navbarToggler" onChange={onOpenNavBar}/>
           <ul className={styles.navbar__links}>
             <li><a href="/about">ABOUT</a></li>
             <li><a href="/projects">PROJECTS</a>
