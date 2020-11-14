@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+
 import Link from 'next/link';
 import React from 'react';
 import utilStyles from '../styles/utils.module.css';
@@ -30,12 +30,7 @@ export default function Layout({
   home?: boolean
 }) {
   return (
-    <motion.div
-    initial="initial"
-    animate="enter"
-    exit="exit"
-    variants={{ exit: { transition: { staggerChildren: 0.1 } } }}
-  >
+   
    
     <div className={styles.background}>
 
@@ -63,11 +58,11 @@ export default function Layout({
               </>
             )}
         </header>
-        <motion.div variants={postVariants}>
+      
         <main>
           
           {children}</main>
-          </motion.div> 
+         
       </div>
       
         <div className={styles.bottomLink}>
@@ -86,7 +81,7 @@ export default function Layout({
       </div>
       <ScrollToTop/>
     </div>
-    </motion.div>
+   
    
   )
 }

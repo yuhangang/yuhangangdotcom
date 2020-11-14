@@ -7,7 +7,7 @@ import DesNav from '../components/navBar/NavBar'
 import styles from '../styles/page_styles/project.module.scss'
 import AwsSliderStyles from '../styles/page_styles/styles.module.scss'
 
-import { motion } from 'framer-motion';
+
 
 
 
@@ -29,12 +29,7 @@ const pageTitle: string = siteTitle + " - projects";
 export default function Projects({}) {
   return (
 
-    <motion.div
-    initial="initial"
-    animate="enter"
-    exit="exit"
-    variants={{ exit: { transition: { staggerChildren: 0.1 } } }}
-  >
+    <div>
     
 
       <Head>
@@ -43,7 +38,7 @@ export default function Projects({}) {
 
       </Head>
       <DesNav />
-      <motion.div variants={postVariants}>
+     
       <div className={styles.projectContainer}>
       {slider}
         <div className={styles.bottomFixed}>
@@ -51,8 +46,8 @@ export default function Projects({}) {
         </div>
 
       </div>
-</motion.div>
-      </motion.div>
+
+      </div>
   )
 }
 
