@@ -170,7 +170,7 @@ visibility: center;
         color: white;
         text-decoration: none;
         font-family: inherit;
-        font-size: 22px;
+        font-size: 20px;
         transition: color 200ms linear;
         will-change: color;
         text-shadow: 2px 2px 5px rgba(75, 75, 75, 0.6);
@@ -338,15 +338,15 @@ visibility: center;
 }
 */
 .img{
-  height:60px;
-  width:250px;
+  height:54px;
+  width:225px;
   padding-left:10px;
 }
 
 @media screen and (max-width: 65rem) {
   .img{
-    height:45px;
-    width:200px;
+    height:43px;
+    width:220px;
     padding-left:10px;
   }
 

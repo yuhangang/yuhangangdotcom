@@ -16,7 +16,8 @@ body {
 
 @media only screen and (max-width: 45rem) {
   body {
-    font-size: 14px;
+    font-size: 1.1rem;
+    line-height: 2rem;
   }
 }
 
@@ -78,11 +79,14 @@ h2 {
 }
 
 @media only screen and (max-width: 45rem) {
+  h3 {
+    font-size: 1.3rem;
+  }
   h2 {
-    font-size: 22px;
+    font-size: 1.5rem;
   }
   h4 {
-    font-size: 18px;
+    font-size: 1.4rem;
   }
 }
 
