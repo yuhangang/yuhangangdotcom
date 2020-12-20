@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import React from 'react';
 import Layout, { siteTitle } from '../components/layout';
 import styles from '../styles/page_styles/home.module.scss';
@@ -14,8 +15,14 @@ const MobileMain =()=>{
 <div className={styles.mainContainerItems}>
 
 <div className={styles.mainContainerTitle}>Journey<br></br>Starts Here</div>
-<a href='/about' className={styles.homeButton}>about me</a>
-<a href='/projects' className={styles.homeButton}>my works</a>
+<div className={styles.homeButton}>
+<Link href='/about' >about me</Link>
+</div>
+<div className={styles.homeButton}>
+<Link href='/projects'>my works</Link>
+</div>
+
+
 
 
     </div>
