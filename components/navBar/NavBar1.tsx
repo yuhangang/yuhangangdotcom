@@ -22,8 +22,8 @@ export default function NavBar1(): JSX.Element {
 
 
         <div className={styles.navbar__left}>
-         <a href="/"><img className={styles.img} src="/icons/logo.png"/>
-         </a> 
+         <Link href="/"><img className={styles.img} src="/icons/logo.png"/>
+         </Link>
         </div>
 
 
@@ -35,12 +35,12 @@ export default function NavBar1(): JSX.Element {
           </label>
           <input type="checkbox" name="" className={styles.navbar__toggler__input} id="navbarToggler" onChange={onOpenNavBar}/>
           <ul className={styles.navbar__links}>
-            <li><a href="/about">ABOUT</a></li>
-            <li><a href="/projects">PROJECTS</a>
+            <li><Link href="/about">ABOUT</Link></li>
+            <li><Link href="/projects">PROJECTS</Link>
               <ul className={styles.navbar__sublinks}>
-              <li><a href="/projects">All Projects</a></li>
-                <li><a href="/yuhangang.com">yuhangang.com</a></li>
-                <li><a href="/theranos">Theranos</a></li>
+              <li><Link href="/projects">All Projects</Link></li>
+                <li><Link href="/yuhangang.com">yuhangang.com</Link></li>
+                <li><Link href="/theranos">Theranos</Link></li>
               </ul>
             </li>
 
@@ -75,24 +75,24 @@ export default function NavBar1():JSX.Element{
       <span>Menu</span></label>
       <input type="checkbox" name="" className={styles.navbar__toggler__input} id="navbarToggler"/>
       <ul className={styles.navbar__links}>
-        <li><a href="#">Profile</a></li>
-        <li><a href="#">Connections</a>
+        <li><Link href="#">Profile</Link></li>
+        <li><Link href="#">Connections</Link>
           <ul className={styles.navbar__sublinks}>
-            <li><a href="#">linkedin</a></li>
-            <li><a href="#">dribbble</a></li>
-            <li><a href="#">behance</a></li>
-            <li><a href="#">codepen</a></li>
-            <li><a href="#">vimeo</a></li>
+            <li><Link href="#">linkedin</Link></li>
+            <li><Link href="#">dribbble</Link></li>
+            <li><Link href="#">behance</Link></li>
+            <li><Link href="#">codepen</Link></li>
+            <li><Link href="#">vimeo</Link></li>
           </ul>
         </li>
-        <li><a href="#">Jobs</a>
+        <li><Link href="#">Jobs</Link>
           <ul className={styles.navbar__sublinks}>
-            <li><a href="#">front-end developer</a></li>
-            <li><a href="#">back-end developer</a></li>
-            <li><a href="#">web designer</a></li>
+            <li><Link href="#">front-end developer</Link></li>
+            <li><Link href="#">back-end developer</Link></li>
+            <li><Link href="#">web designer</Link></li>
           </ul>
         </li>
-        <li><a href="#">About Us</a></li>
+        <li><Link href="#">About Us</Link></li>
       </ul>
     </div>
   </nav>

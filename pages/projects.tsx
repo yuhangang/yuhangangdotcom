@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import React from 'react'
 //import ImageCarousel from "../components/carousel"
 import AwesomeSlider from 'react-awesome-slider'
@@ -57,7 +58,9 @@ const SliderItem = function (input: { char: string, url:string, imageUrl:string 
   return (
     <div className={styles.sliderItem}>
     <img src={input.imageUrl}></img>
-    <a href={input.url} className={styles.homeButton}>EXPLORE</a>
+    <div className={styles.homeButton}>
+    <Link href={input.url}>EXPLORE</Link>
+    </div>
     </div>
   );
 }
