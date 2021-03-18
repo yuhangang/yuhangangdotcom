@@ -4,37 +4,27 @@ import React from 'react';
 import utilStyles from '../styles/utils.module.css';
 import styles from './layout.module.scss';
 import Nav from './navBar/NavBar';
-import Nav1 from './navBar/Nav';
 import ProfileLink from './profile_link/profile_link';
 import ScrollToTop from './scrollToTopButton/scrollToTopButton';
 const name = 'Yuhangang'
 export const siteTitle = 'yuhangang'
-const EmailLinks =<div>contact : <a href="mailto: redrainhang@gmail.com" className={styles.email_link}>redrainhang@gmail.com</a></div>;
 
-const postVariants = {
-  initial: { scale: 1, y: 0, opacity: 0.5 },
-  enter: { scale: 1, y: 0, opacity: 1, transition: { duration: 0.3, ease: [0.48, 0.15, 0.25, 0.96] } },
-  exit: {
-    scale: 1,
-    y: 0,
-    opacity: 0.5,
-    transition: { duration: 1, ease: [0.48, 0.15, 0.25, 0.96] }
-  }
-};
 
 export default function Layout({
   children,
-  home
+  home,
+  showNavbar
 }: {
   children: React.ReactNode
   home?: boolean
+  showNavbar?:boolean
 }) {
   return (
    
    
     <div className={styles.background}>
 
-      <Nav></Nav>
+      {(showNavbar !== false) ? <Nav></Nav>: null}
 
       
       <div className={styles.container}>
@@ -65,12 +55,14 @@ export default function Layout({
          
       </div>
       
-        <div className={styles.bottomLink}>
+        
+     {(showNavbar !== false)? <> 
+      <div className={styles.bottomLink}>
         <ProfileLink></ProfileLink>
     
         
         </div>
-      <div className={styles.bottom}>
+       <div className={styles.bottom}>
         <div className={styles.absoluteBottom}>
         Copyright © 2020 Yuhangang. All rights reserved.
     
@@ -79,7 +71,7 @@ export default function Layout({
    
        
       </div>
-      <ScrollToTop/>
+      <ScrollToTop/></>:null}
     </div>
    
    
