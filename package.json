@@ -28,11 +28,7 @@
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-optipng": "^8.0.0",
     "imagemin-svgo": "^8.0.0",
-<<<<<<< HEAD
     "next": "^10.0.9",
-=======
-    "next": "^10.0.3",
->>>>>>> d5b7b44191acc903bd9aa173219d7f38d482551f
     "next-images": "^1.5.0",
     "next-optimized-images": "^2.6.2",
     "nodemailer": "^6.4.11",
