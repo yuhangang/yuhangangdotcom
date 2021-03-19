@@ -56,7 +56,7 @@ export default function Home({
         
         <>
           <h2 style={{color:"#6fe9d5"}}>Challenge Exploration</h2>
-          <h3>What’s Happening + Intended Actions, Target Users and Intended Outcome</h3>
+          <h3>What’s Happening</h3>
           First and foremost, our team would like to introduce a potential problem that is occurring around us in Malaysia.
                   According to a Contextual Analysis of the Malaysian Health System in 2016, Malaysia will become an ‘ageing’ society
                   by 2020, which is last year. This means that there will be around 7% of the population aged more than 65.
@@ -88,10 +88,22 @@ export default function Home({
                    in just another mere 20 years, the estimated percentage of this population will be doubled. These changes will be accompanied
                     by a significant increase of Non-Communicable Diseases (NCD), which are chronic diseases like heart attack, cancer,
                      diabetes and more. This will greatly impact many parties (2021).
-                     <br>
-                     </br>
+                     <br/>
+        <br/>
+        <br/>
 
-                     
+                     <h3>Intended Actions, Target Users and Intended Outcome</h3>   
+                     For now, our team will list out our intended actions, target users and also intended outcome. Our team intends to create a health
+                      monitoring application accompanied by a few wearable monitoring tools that are able to monitor the vitals of the user. It is also
+                       able to make an emergency call on behalf of the user if one of the vitals is seriously wrong. Furthermore, the application allows
+                        communication between the doctor and his or her patients for a much easier consultation session, either by calling, messaging or
+                         video calling. 
+                         <br></br>
+                         <br></br>
+                         Otherwise, the patient can also use the application to make a reservation with the doctor if they prefer to meet
+                          face-to-face. From the previous examples of use cases, it is clear that the target users, or customers for our solution are
+                           mostly doctors and patients. As for the intended outcome for our solution, it is to make sure that patients can always keep
+                            their health in check, especially patients who already have chronic diseases and the elderlies. 
 
        
         <br/>
@@ -123,17 +135,7 @@ export default function Home({
 
 
       <h3>Who are the key players in this space?</h3>
-      For now, our team will list out our intended actions, target users and also intended outcome. Our team intends to create a health
-                      monitoring application accompanied by a few wearable monitoring tools that are able to monitor the vitals of the user. It is also
-                       able to make an emergency call on behalf of the user if one of the vitals is seriously wrong. Furthermore, the application allows
-                        communication between the doctor and his or her patients for a much easier consultation session, either by calling, messaging or
-                         video calling. 
-                         <br></br>
-                         <br></br>
-                         Otherwise, the patient can also use the application to make a reservation with the doctor if they prefer to meet
-                          face-to-face. From the previous examples of use cases, it is clear that the target users, or customers for our solution are
-                           mostly doctors and patients. As for the intended outcome for our solution, it is to make sure that patients can always keep
-                            their health in check, especially patients who already have chronic diseases and the elderlies. 
+      
 
 
       <h5>Healthcare Professionals</h5>
@@ -144,6 +146,7 @@ export default function Home({
       {buildRowNarrow('Patients are required to wear some wearables monitoring tools')}
       {buildRowNarrow('Receive notification from the hospital or doctors if there’s any health issue')}
       {buildRowNarrow('RProvide feedbacks to hospital or doctors')}
+
       <h5>Hospital/HealthCare centre</h5>
       {buildRowNarrow('Allocate respective healthcare professionals if there’s an emergency call through the application')}
       <h5>Govt</h5>
@@ -201,7 +204,35 @@ export default function Home({
 {buildRow('Always listen first before pointing out each other viewpoint')}
 {buildRow('Actively participate in solving problems or bring up ideas')}
 {buildRow('Give positive feedback')}
-{buildRow('Respect each other working habit')}
+{buildRow("Respect each other's working habits.")}
+
+            </div>
+          },
+          {
+            dateTime: "4. What we should not do", title: "",
+            //detail:"implement user interface of user login, data table of patients data, add and removal of the \patients to monitor, connection to server." 
+            detail: <div>
+
+{buildRow('Do not treat this assignment as an individual assignment')}
+{buildRow('Do not expect our teammate to do our part of the work for you')}
+{buildRow('Do not work on this assignment on your own')}
+{buildRow('Trying to rush other team members to finish tasks earlier than agreed due time')}
+{buildRow('Do not include any extra tasks or documentation without majority approval')}
+
+
+            </div>
+          },
+          {
+            dateTime: "5. How we should work", title: "",
+            //detail:"implement user interface of user login, data table of patients data, add and removal of the \patients to monitor, connection to server." 
+            detail: <div>
+
+{buildRow('Respect our team members’ ideas and give everyone chances to voice their opinions')}
+{buildRow('Be aware of the deadlines set by the team and the teaching team and make sure to complete the given tasks before the deadlines not expect our teammate to do our part of the work for you')}
+{buildRow('Do not work on this Work professionally as if we are working in a workplace on your own')}
+{buildRow('Trying to rush other team Make sure that nobody has too much workload while others have less workload when distributing the tasks to finish tasks earlier than agreed due time')}
+{buildRow("Always ask first before adjusting any other teammates' tasks")}
+
 
             </div>
           },
@@ -225,7 +256,10 @@ export default function Home({
             <tr><td>Yu Hang Ang</td><td>29561647</td></tr>
           </table>
          
-          
+          <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
 
 
         </div>]
