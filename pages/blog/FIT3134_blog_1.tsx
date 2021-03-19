@@ -24,7 +24,7 @@ export default function Home({
       <div className={styles.mainContainer}>
 
         {AboutContainer({
-          img_url: "/images/blog-1.jpg",
+          img_url: "/images/blog1/blog-1.jpg",
           position1: 50,
           position2: 70,
           children: [
@@ -33,7 +33,7 @@ export default function Home({
                   
                   <>
                 <div className={styles.projectIntroTile} style={{color:"rgba(255,255,255,0.7)",textAlign:'center'}}>
-                  <h1 style={{textAlign:"center"}}>Blog 1 : {title}</h1>
+                  <h1 style={{textAlign:"center"}}>{title}</h1>
                   Muhammad Hakimi Aiman, Demond Wong Qi Jun, Tai Mun Hong, Warit Hiranmateekul, Yu Hang Ang	
                
               
@@ -62,6 +62,28 @@ export default function Home({
                   by 2020, which is last year. This means that there will be around 7% of the population aged more than 65.
                   
                   <br/><br/>
+
+                  <div style={{alignItems:"center",margin:"auto",width:"80%",justifyContent:"center"}}>
+            <br/>
+        <Image
+        unoptimized={false}
+        src="/images/blog1/aging_chart.png"
+        alt="Picture of the author"
+        layout="responsive"
+   quality={50}
+        width={900}
+        height={600}
+        
+      />
+      <div style={{color:"lightgrey",fontSize:"12px"}}>
+      As the population ages, the demographic transition, source: (Moh.gov.my, 2016) pg 93
+      </div>
+
+
+
+        <br></br>
+        </div>
+
                   Furthermore,
                    in just another mere 20 years, the estimated percentage of this population will be doubled. These changes will be accompanied
                     by a significant increase of Non-Communicable Diseases (NCD), which are chronic diseases like heart attack, cancer,
@@ -69,38 +91,13 @@ export default function Home({
                      <br>
                      </br>
 
-                     For now, our team will list out our intended actions, target users and also intended outcome. Our team intends to create a health
-                      monitoring application accompanied by a few wearable monitoring tools that are able to monitor the vitals of the user. It is also
-                       able to make an emergency call on behalf of the user if one of the vitals is seriously wrong. Furthermore, the application allows
-                        communication between the doctor and his or her patients for a much easier consultation session, either by calling, messaging or
-                         video calling. 
-                         <br></br>
-                         <br></br>
-                         Otherwise, the patient can also use the application to make a reservation with the doctor if they prefer to meet
-                          face-to-face. From the previous examples of use cases, it is clear that the target users, or customers for our solution are
-                           mostly doctors and patients. As for the intended outcome for our solution, it is to make sure that patients can always keep
-                            their health in check, especially patients who already have chronic diseases and the elderlies. 
+                     
 
-
-        <div style={{alignItems:"center",margin:"auto",width:"100%",justifyContent:"center"}}>
-            <br/>
-        <Image
-        unoptimized={false}
-        src="/images/IMG_6882.jpg"
-        alt="Picture of the author"
-        layout="responsive"
-   quality={50}
-        width={1280}
-        height={720}
-        
-      />
-      
-      <div style={{color:"lightgrey",fontSize:"12px"}}>
-      "An Image Description"
-      </div>
-        <br></br>
-        </div>
+       
         <br/>
+        <br/>
+        <br/>
+      <br/>
       <h3>What are the views/ perspectives at this level?</h3>
       <h5>Country (Malaysia)</h5>
       {buildRowNarrow('More funds had to be put into the current healthcare system to keep up with the declining health')}
@@ -114,13 +111,31 @@ export default function Home({
       {buildRowNarrow('People may find it time consuming to help those people who are in need, even though they want to help')}
       {buildRowNarrow('People who suddenly collapse due to health issues may cause public disturbance')}
 
-      <h5>Community</h5>
+      <h5>Individual</h5>
       {buildRowNarrow('Getting professional checkups on a weekly or monthly basis is too time consuming for some people')}
       {buildRowNarrow('Getting annual checkups might not be a very effective way, as some readings may suddenly be dangerous')}
       <br/>
       <br/>
+      <br/>
+      <br/>
+      
+
+
 
       <h3>Who are the key players in this space?</h3>
+      For now, our team will list out our intended actions, target users and also intended outcome. Our team intends to create a health
+                      monitoring application accompanied by a few wearable monitoring tools that are able to monitor the vitals of the user. It is also
+                       able to make an emergency call on behalf of the user if one of the vitals is seriously wrong. Furthermore, the application allows
+                        communication between the doctor and his or her patients for a much easier consultation session, either by calling, messaging or
+                         video calling. 
+                         <br></br>
+                         <br></br>
+                         Otherwise, the patient can also use the application to make a reservation with the doctor if they prefer to meet
+                          face-to-face. From the previous examples of use cases, it is clear that the target users, or customers for our solution are
+                           mostly doctors and patients. As for the intended outcome for our solution, it is to make sure that patients can always keep
+                            their health in check, especially patients who already have chronic diseases and the elderlies. 
+
+
       <h5>Healthcare Professionals</h5>
       {buildRowNarrow('Receive notification from the Hospital/ HealthCare centre')}
       {buildRowNarrow('Provides medical solution to the patient according to the patient’s health issue')}
@@ -138,9 +153,11 @@ export default function Home({
         <br></br>
         <br></br>
         <h3>References</h3>
-        <a href='https://www.moh.gov.my/moh/resources/Vol_1_MHSR_Contextual_Analysis_2016.pdf' style={{color:"lightskyblue"}}>[1] Moh.gov.my. 2021. [online] Available at: https://www.moh.gov.my/moh/resources/Vol_1_MHSR_Contextual_Analysis_2016.pdf [Accessed 18 March 2021].
+        <a href='https://www.moh.gov.my/moh/resources/Vol_1_MHSR_Contextual_Analysis_2016.pdf' style={{color:"lightskyblue"}}>[1] Moh.gov.my. 2016. [online] Available at: https://www.moh.gov.my/moh/resources/Vol_1_MHSR_Contextual_Analysis_2016.pdf [Accessed 18 March 2021].
         </a>
-        <br></br>
+      
+       
+        <hr className="rounded" style={{marginTop:'10vw',marginBottom:"10vw"}}></hr>
         </>
     ])}
 
@@ -230,9 +247,9 @@ export default function Home({
 
 
 function buildRow(text:string){
- return <div><div style={{columns:"2",display:"flex",alignItems:"center"}}><div style={{fontWeight:"bold",fontSize:"24px"}}>-&nbsp;</div> <div>{text}</div></div><br/></div>;
+ return <div><div style={{columns:"2",display:"flex"}}><div style={{fontWeight:"bold",fontSize:"24px"}}>-&nbsp;</div> <div>{text}</div></div><br/></div>;
 }
 
 function buildRowNarrow(text:string){
-  return <div style={{columns:"2",display:"flex",alignItems:"center"}}><div style={{fontWeight:"bold",fontSize:"24px"}}>-&nbsp;</div> <div>{text}</div></div>;
+  return <div style={{columns:"2",display:"flex"}}><div style={{fontWeight:"bold",fontSize:"24px"}}>-&nbsp;</div> <div>{text}</div></div>;
  }
