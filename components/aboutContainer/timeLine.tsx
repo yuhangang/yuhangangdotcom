@@ -26,7 +26,7 @@ function TimeLineItem(data:TimeLineData):JSX.Element {
   return(
     <li className={tl.timeline_item}>
     <div className={tl.timeline_info}>
-        <span>{data.dateTime}</span>
+        <div style={{wordBreak: "break-word",overflowWrap:"break-word",whiteSpace:"pre-wrap",textOverflow:"ellipsis",maxWidth:"80vw",fontWeight:"lighter"}}>{data.dateTime}</div>
     </div>
     <div className={tl.timeline_marker}></div>
     <div className={tl.timeline_content}>
@@ -59,7 +59,7 @@ export default function TimeLine({title, items}: {title: string, items: TimeLine
   
 }}>
 <div className={styles.work}>
-<h2>{title}</h2>
+<h2 style={{maxWidth:"100vw",textOverflow:"clip",color:"#6fe9d5"}}>{title}</h2>
       
 <ul className={`${tl.timeline}${styles.timeline}`}>
 
