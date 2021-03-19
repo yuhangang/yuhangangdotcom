@@ -149,7 +149,7 @@ export default function Home({
 
       <h5>Hospital/HealthCare centre</h5>
       {buildRowNarrow('Allocate respective healthcare professionals if there’s an emergency call through the application')}
-      <h5>Governmentt</h5>
+      <h5>Government</h5>
       {buildRowNarrow('Provide funds for this project')}
 
 
