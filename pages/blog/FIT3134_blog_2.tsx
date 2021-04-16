@@ -58,6 +58,60 @@ export default function Home({
         {ResponsiveComponent([
         
         <>
+         <h2 style={{color:"#6fe9d5"}}>Competitive Analysis</h2>
+          <h3>Foreign Startups</h3>
+          We consider the foreign healthcare startups, especially <a href="https://www.healthrecoverysolutions.com/" style={{color:"rgba(255,255,255,0.7)"}}>Health Recovery Solutions</a> from the United States,
+          as our primary opponents in the market. The remote healthcare monitoring startup found and operates in developed
+          countries which has advantages in R&D and funding. Healthcare Recovery Solutions already launched their products
+          and have <a href="https://www.doc2us.com/vision-mission-core-values" style={{color:"rgba(255,255,255,0.7)"}}>secured 70 millions USD series C funding.</a>
+<br/>
+<br/>
+While our advantages are lower cost of operation and product development, for example average annual salary of software
+engineers in the United States is around<a href ="https://www.indeed.com/career/software-engineer/salaries"  style={{color:"rgba(255,255,255,0.7)"}}>110,000 USD</a>, while Malaysia is <a href ="https://www.payscale.com/research/MY/Job=Software_Engineer/Salary"  style={{color:"rgba(255,255,255,0.7)"}}>11,800 USD</a>, so we can offer more affordable products. Besides
+that, Asia has more than half of the global population and has a lot of emerging economies. As the startup raised in Asia,
+due to geographical and cultural familiarity, so we can develop product and business strategy more suitable for Asia geography,
+cultural and economic status.
+<br/>
+<br/>
+<br/>
+          <h3>Local Startups</h3>
+          Compared to other local startups like Doc2us and Speedoc.
+          
+          <br/>
+          <br/>
+          <a href="https://www.doc2us.com/vision-mission-core-values" style={{color:"rgba(255,255,255,0.7)"}}>Doc2us</a>  is a online healthcare consulting and drug delivery platform. Since it doesn't have either door to door services or remote monitoring. The healthcare professionals
+          can only diagnosis the patient based on video cam or oral description by patients. So the use case of Doc2us products may not suit the certain situation which required to lot more
+          information. But the advantages of their solutions is it can fully operated remotely and avoiding the completivity of using healthcare monitoring devices.
+          <br/>
+          <br/>
+          <a href="https://speedoc.com/my/about-us" style={{color:"rgba(255,255,255,0.7)"}}> Speedoc</a> not only offer consulation, but they also provider healthcare services door to door,
+          like doctoring, nursing, ambulances and healthcare screening. In terms of services quality, door to door healthcare monitoring avoid the need of patient to leave home
+          for hospital or clinic, it's also have better services quality compared to remote monitoring because patient able to meet with healthcare professional face-to-face.  
+          <br/>
+          <br/>
+          Although they entered the market earlier compared to us.
+          Their products are still  doesn’t have functionality to provide healthcare monitoring remotely, which make healthcare more afforable, efficient and accessible. 
+
+
+
+  
+         <br/>
+         <br/>
+         It’s possible for them to launch a similar product with us by developing in house or collaborating with foreign
+         startup.
+
+         Although they can promote the products to existing customers, at times it may be too late as our products
+         already start entering the market and attracting the users.
+          <br/>
+<br/>
+<br/>
+<br/>
+         
+          <h2 style={{color:"#6fe9d5"}}>Prototype Design</h2>
+    
+
+          <br/>
+
          <AwesomeSlider cssModule={AwsSliderStyles} className={sliderStyles.awsBtn} fillParent={false}
     selected={0}
     infinite={false}
