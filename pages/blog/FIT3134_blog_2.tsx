@@ -260,24 +260,7 @@ cultural and economic status.
         <br/>
         <br/>
 
-                     <h3>Intended Actions, Target Users and Intended Outcome</h3>   
-                     For now, our team will list out our intended actions, target users and also intended outcome. Our team intends to create a health
-                      monitoring application accompanied by a few wearable monitoring tools that are able to monitor the vitals of the user. It is also
-                       able to make an emergency call on behalf of the user if one of the vitals is seriously wrong. Furthermore, the application allows
-                        communication between the doctor and his or her patients for a much easier consultation session, either by calling, messaging or
-                         video calling. 
-                         <br></br>
-                         <br></br>
-                         Otherwise, the patient can also use the application to make a reservation with the doctor if they prefer to meet
-                          face-to-face. From the previous examples of use cases, it is clear that the target users, or customers for our solution are
-                           mostly doctors and patients. As for the intended outcome for our solution, it is to make sure that patients can always keep
-                            their health in check, especially patients who already have chronic diseases and the elderlies. 
-
-       
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+                
        
         <h3>How has this influenced our thinking/actions?</h3>
     
