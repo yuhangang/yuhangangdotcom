@@ -119,7 +119,7 @@ cultural and economic status.
 
   >
 
-<div style={{background:"rgba(255,255,255,0.2)",width:"100%"}}>
+<div style={{background:"rgba(255,255,255,0.2)",width:"75%",right:"0",left:"0",margin:"auto"}}>
  
   <Image
       
@@ -133,7 +133,7 @@ cultural and economic status.
 
 
 </div>
-<div style={{width:"90%",margin:"auto",right:"0",left:"0"}}>
+<div style={{width:"70%",margin:"auto",right:"0",left:"0"}}>
 <Image
       
         src="/images/blog2/Emergency_Contact.png"
@@ -143,21 +143,7 @@ cultural and economic status.
         
       />
 </div>
-
-
-  </AwesomeSlider>
-<br/>
-<br/>
-<br/>
-<br/>
-  <AwesomeSlider cssModule={AwsSliderStyles} className={sliderStyles.awsBtn}  fillParent={false}
-    selected={0}
-    infinite={false}
-    bullets
-  >
-
-
-<div style={{width:"40%",margin:"auto",right:"0",left:"0"}}>
+<div style={{width:"38%",margin:"auto",right:"0",left:"0"}}>
   <Image
       
         src="/images/blog2/Getting_Started.png"
@@ -166,18 +152,22 @@ cultural and economic status.
 
         
       />
+    
+    <br/>
+     
 </div>
 
-<div style={{height:"70%",margin:"auto",top:"0",bottom:"0"}}><Image
+<div style={{height:"85%",margin:"auto",top:"0",bottom:"0"}}><Image
       
       src="/images/blog2/Doctor_Subbed.png"
       alt="Picture of the author"
       layout="fill"
 
       
-    /></div>
+    />
+    </div>
 
-<div><Image
+<div style={{width:"90%",margin:"auto",right:"0",left:"0"}}><Image
       
       src="/images/blog2/Assign_Doctor.png"
       alt="Picture of the author"
@@ -187,11 +177,13 @@ cultural and economic status.
     />
 </div>
 
+
   </AwesomeSlider>
-  <br/>
 <br/>
 <br/>
 <br/>
+<br/>
+
           <h2 style={{color:"#6fe9d5"}}>Reflective Analysis</h2>
           <h3>What did we learn and/or experience? Why does it matter?</h3>
           Throughout the last 6 weeks of this unit, a lot has already been going on workshops

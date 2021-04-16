@@ -65,7 +65,7 @@ export default function Layout({
        </>:null}
        <div className={styles.bottom}>
         <div className={styles.absoluteBottom}>
-        Copyright © 2020 Yuhangang. All rights reserved.
+        Copyright © { new Date().getFullYear()} Yuhangang. All rights reserved.
     
 
         </div>
