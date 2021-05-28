@@ -10,7 +10,7 @@ import TimeLine from '../../components/aboutContainer/timeLine'
 import ResponsiveComponent from '../../components/responsiveComponent/responsive';
 import AwesomeSlider from 'react-awesome-slider'
 import AwsSliderStyles from '../../styles/page_styles/styles.module.scss'
-import sliderStyles from "./FIT3134_blog_2.module.scss"
+import sliderStyles from "../../styles/page_styles/FIT3134_blog_2.module.scss"
 
 //import ImageCarousel from "../components/carousel"
 const title:string = "HealthCare Monitoring Malaysia";
