@@ -35,7 +35,7 @@ export default function NavBar1(): JSX.Element {
           </label>
           <input type="checkbox" name="" className={styles.navbar__toggler__input} id="navbarToggler" onChange={onOpenNavBar}/>
           <ul className={styles.navbar__links}>
-            <li><Link href="/about">ABOUT</Link></li>
+            
             <li><Link href="/projects">PROJECTS</Link>
               <ul className={styles.navbar__sublinks}>
               <li><Link href="/projects">All Projects</Link></li>
