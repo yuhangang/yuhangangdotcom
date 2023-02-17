@@ -59,6 +59,7 @@
   width: 30rem;
   color: white;
   font-size: 18px;
+  font-weight: 300;
   text-align: left;
   text-shadow: 5px 5px 10px rgba(200, 200, 200, 0.2);
   float: right;
@@ -83,12 +84,12 @@
   min-height: 10rem;
   border-radius: 10rem;
   transition: 0.5s;
-  border: solid 4px rgba(255, 255, 255, 0.6);
+  border: solid 2px rgba(255, 255, 255, 0.6);
   filter: rgba(255, 255, 255, 0.1);
 }
 
 .profileContainer:hover .profile_picture {
-  border: solid 4px rgba(255, 255, 255, 0.3);
+  border: solid 2px rgba(255, 255, 255, 0.3);
   filter: brightness(80%);
 }
 
