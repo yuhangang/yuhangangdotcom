@@ -1,65 +1,76 @@
-import { motion } from 'framer-motion';
-import React from 'react';
+import { motion } from "framer-motion";
+import React from "react";
 import styles from "./timeLine.module.scss";
 
-
-
-
-
-
-
-
- 
 export default function Skills() {
-
-
- 
-
- // const timeLine = <Timeline align="left" className={styles.timeLine}>
-//{timeLinesItems.map(timeLineItem)}</Timeline>;
   return (
-<motion.div initial="pageInitial" animate="pageAnimate" variants={{
-  pageInitial: {
-    opacity: 0
-  },
-  pageAnimate: {
-    opacity: 1
-  },
-  
-}}>
-
-      
+    <motion.div
+      initial="pageInitial"
+      animate="pageAnimate"
+      variants={{
+        pageInitial: {
+          opacity: 0,
+        },
+        pageAnimate: {
+          opacity: 1,
+        },
+      }}
+    >
       <div className={styles.skills}>
+        <h2>Education and Skills</h2>
+        <br></br>
+        <h3>Education</h3>
+        <div className={styles.eduItem}>
+          - Bachelor of Computer Science Minor in Data Science, Monash
+          University
+        </div>
+        <div className={styles.eduItem}>
+          - UEC and SPM certificate, Chung Hwa High School, Muar
+        </div>
+        <div className={styles.eduLink}>
+          <a
+            target="_blank"
+            href="https://www.udemy.com/certificate/UC-637348cb-4142-49e9-a440-26772b1ab72d/"
+          >
+            {" "}
+            - The Complete 2020 Flutter Development Bootcamp with Dart, Udemy
+          </a>
+        </div>
+        <br></br>
+        <br></br>
+        <h3>Programming Languages</h3>
+        <h4>Dart, Go, Javascript/Typescript, Python, C, Java/Kotlin, R</h4>
+        <br></br>
+        <br></br>
+        <h3>Industry Skills</h3>
+        <div className={styles.skillsTable}>
+          <div className={styles.skillsItem}>
+            <img src={"./icons/flutter.svg"}></img>
+            <h4>Flutter</h4>
+          </div>
+          <div className={styles.skillsItem}>
+            <img src={"./icons/go.svg"}></img>
+            <h4>Go</h4>
+          </div>
+          <div className={styles.skillsItem}>
+            <img src={"./icons/next-js.svg"}></img>
+            <h4>Next.js</h4>
+          </div>
 
-<h2>Education and Skills</h2>
-<br></br>
-<h3>Education</h3>
-      <div className={styles.eduItem}>- Bachelor of Computer Science Minor in Data Science, Monash University</div>
-      <div className={styles.eduItem}>- UEC and SPM certificate, Chung Hwa High School, Muar</div>
-      <div className={styles.eduLink}><a target="_blank" href="https://www.udemy.com/certificate/UC-637348cb-4142-49e9-a440-26772b1ab72d/"> - The Complete 2020 Flutter Development Bootcamp with Dart, Udemy</a></div>
-      <br></br>
-      <br></br>
-      <h3>Programming Languages</h3>
-      <h4>Python, Javascript/Typescript, Dart, C, Java, R</h4>
-      <br></br>
-      <br></br>
-      <h3>Industry Skills</h3>
-      <div className={styles.skillsTable}>
-      <div className={styles.skillsItem}><img src={"./icons/next-js.svg"} ></img><h4>Next.js</h4></div>
-      <div className={styles.skillsItem}><img src={"./icons/flutter.svg"} ></img><h4>Flutter</h4></div>
-      <div className={styles.skillsItem}><img src={"./icons/android.svg"} ></img><h4>Android</h4></div>
+          <div className={styles.skillsItem}>
+            <img src={"./icons/android.svg"}></img>
+            <h4>Android</h4>
+          </div>
+        </div>
+        <br></br>
+        <br></br>
+        <h3>Software Tools</h3>
+        <h4>
+          PostgreSQL, Oracle SQL Developer, Git, Tableau, Adobe PhotoShop, Adobe
+          Premiere Pro
+        </h4>
       </div>
-      <br></br>
-      <br></br>
-      <h3>Software Tools</h3>
-      <h4>Oracle SQL Developer, Git Lab, Tableau, Adobe PhotoShop, Adobe Premiere Pro</h4>
- 
-      
-      </div>
-    
-     
-</motion.div>
-
+    </motion.div>
   );
 }
 
@@ -173,4 +184,3 @@ function timeLineItem(data:TimeLineData):JSX.Element {
  );
 }
 */
- 
