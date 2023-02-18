@@ -1,17 +1,22 @@
 import Box from "@material-ui/core/Box";
 import Fab from "@material-ui/core/Fab";
-import { createMuiTheme, createStyles, makeStyles, Theme, ThemeProvider } from '@material-ui/core/styles';
+import {
+  createMuiTheme,
+  createStyles,
+  makeStyles,
+  Theme,
+  ThemeProvider,
+} from "@material-ui/core/styles";
 import useScrollTrigger from "@material-ui/core/useScrollTrigger";
-import Zoom from '@material-ui/core/Zoom';
-import HomeIcon from '@material-ui/icons/Home';
-import InfoIcon from '@material-ui/icons/Info';
-import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
-import MailIcon from '@material-ui/icons/Mail';
-import ViewCompactIcon from '@material-ui/icons/ViewCompact';
+import Zoom from "@material-ui/core/Zoom";
+import HomeIcon from "@material-ui/icons/Home";
+import InfoIcon from "@material-ui/icons/Info";
+import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
+import MailIcon from "@material-ui/icons/Mail";
+import ViewCompactIcon from "@material-ui/icons/ViewCompact";
 import Link from "next/link";
 import React from "react";
 import styles from "./scrollToTopButton.module.scss";
-
 
 interface Props {
   /**
@@ -21,8 +26,6 @@ interface Props {
   window?: () => Window;
   children: React.ReactElement;
 }
-
-
 
 function ScrollTop(props: Props) {
   const { children, window } = props;
@@ -49,65 +52,78 @@ function ScrollTop(props: Props) {
   );
 }
 
-
-function scroll():void {
+function scroll(): void {
   window.scrollTo({
     top: 0,
-    behavior: "smooth"
+    behavior: "smooth",
   });
 }
 
-
-
- function ScrollToTop1() {
-
-  
-
-  
-
-    return (
-
-      <div className={styles.scrollToTop}>
-        <div className={styles.buttonStyle}>
+function ScrollToTop1() {
+  return (
+    <div className={styles.scrollToTop}>
+      <div className={styles.buttonStyle}>
         <div className="scroll-to-top">
-        
           <div onClick={() => scrollTo()} className={styles.floating_button}>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="2rem" height="2rem"><path d="M0 0h24v24H0z" fill="none"/><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="black"
+              width="2rem"
+              height="2rem"
+            >
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
+            </svg>
           </div>
-          </div>
-      </div>
-      
         </div>
-        
-  
-      
-    );
-  }
+      </div>
+    </div>
+  );
+}
 
-
-  const useStyles = makeStyles((theme: Theme) =>
+const useStyles = makeStyles((theme: Theme) =>
   createStyles({
-    
     root: {
-      
       height: 380,
-      transform: 'translateZ(0px)',
+      transform: "translateZ(0px)",
       flexGrow: 1,
     },
     speedDial: {
-      position: 'absolute',
+      position: "absolute",
       bottom: theme.spacing(2),
       right: theme.spacing(2),
     },
-  }),
+  })
 );
 
 const actions = [
-  { icon: <Link href='/about' prefetch><MailIcon /></Link>, name: 'Contact' },
-  { icon: <ViewCompactIcon></ViewCompactIcon>, name: 'Projects' },
-  
-  { icon: <Link href='/about' prefetch><InfoIcon /></Link>, name: 'About' },
-  { icon: <Link href='/' prefetch><HomeIcon /></Link>, name: 'Home' },
+  {
+    icon: (
+      <Link href="/about" prefetch>
+        <MailIcon />
+      </Link>
+    ),
+    name: "Contact",
+  },
+  { icon: <ViewCompactIcon></ViewCompactIcon>, name: "Projects" },
+
+  {
+    icon: (
+      <Link href="/about" prefetch>
+        <InfoIcon />
+      </Link>
+    ),
+    name: "About",
+  },
+  {
+    icon: (
+      <Link href="/" prefetch>
+        <HomeIcon />
+      </Link>
+    ),
+    name: "Home",
+  },
 ];
 
 const theme = createMuiTheme({
@@ -117,60 +133,36 @@ const theme = createMuiTheme({
         margin: "5rem",
 
         position: "fixed",
-      }
-    }
+      },
+    },
   },
   palette: {
     primary: {
-      main: '#FFFFFFCC',
-      light:'#666666',
+      main: "#FFFFFFCC",
+      light: "#666666",
     },
-    secondary: {main:'#222222'},
+    secondary: { main: "#222222" },
   },
 });
 
-
-
-
 export default function ScrollToTop() {
-
   return (
     <div className={styles.bottomRight}>
-
-<div  className={styles.SpeedDial}>
-      
-      <ThemeProvider theme={theme}  >
-        
-      
-      
-    </ThemeProvider>
-            
+      <div className={styles.SpeedDial}></div>
+      <div className={styles.BackButton}>
+        <ThemeProvider theme={theme}>
+          <ScrollTop>
+            <Fab size="small" color="primary" aria-label="scroll back to top">
+              <KeyboardArrowUpIcon />
+            </Fab>
+          </ScrollTop>
+        </ThemeProvider>
+      </div>
     </div>
-    <div  className={styles.BackButton}>
-      
-      <ThemeProvider  theme={theme}  >
-        
-    
-      <Box>
-        <ScrollTop>
-        <Fab size="small" color="primary"  aria-label="scroll back to top">
-          <KeyboardArrowUpIcon />
-        </Fab>
-      </ScrollTop>
-
-      </Box>
-      
-
-    </ThemeProvider>
-            
-    </div>
-    </div>
-    
-    
   );
-        }
+}
 
-        /*
+/*
         <Box>
       <SpeedDial
         color="light"
