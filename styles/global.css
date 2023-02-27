@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;700&display=swap" rel="stylesheet');
 
 html,
 body {
@@ -27,7 +27,7 @@ a {
 }
 
 h3 {
-  color: rgba(150, 255, 220);
+  color: rgba(145, 144, 139);
   font-weight: 400;
   font-size:24px;
 }

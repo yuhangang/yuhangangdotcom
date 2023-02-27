@@ -11,10 +11,10 @@ interface TimeLineData {
   link?: string;
 }
 
-function TimeLineItem(data: TimeLineData): JSX.Element {
-  let detail: JSX.Element = data.link ? (
-    <div className={styles.timeLineLink}>
-      <Link href={data.link}>
+function TimeLineItem(props: TimeLineData): JSX.Element {
+  let detail: JSX.Element = props.link ? (
+    <div className={styles.timeLineLink} key={props.title}>
+      <Link href={props.link}>
         <div className={tl.timeLineLinkFont}>Explore</div>
       </Link>
       <br></br>
@@ -33,23 +33,22 @@ function TimeLineItem(data: TimeLineData): JSX.Element {
             whiteSpace: "pre-wrap",
             textOverflow: "ellipsis",
             maxWidth: "80vw",
-            fontWeight: "lighter",
+            fontWeight: 300,
           }}
         >
-          {data.dateTime}
+          {props.dateTime}
         </div>
       </div>
       <div className={tl.timeline_marker}></div>
       <div className={tl.timeline_content}>
-        <h3 className={tl.timeline_title}>{data.title}</h3>
-        <p>{data.detail ? data.detail : ""}</p>
+        <h3 className={tl.timeline_title}>{props.title}</h3>
+        <p>{props.detail ? props.detail : ""}</p>
         {detail}
       </div>
     </li>
   );
 }
 
-// export default function TimeLine(input:{title:string,items:TimeLineData[]}) {
 export default function TimeLine({
   title,
   items,
@@ -57,8 +56,6 @@ export default function TimeLine({
   title: string;
   items: TimeLineData[];
 }) {
-  // const timeLine = <Timeline align="left" className={styles.timeLine}>
-  //{timeLinesItems.map(timeLineItem)}</Timeline>;
   return (
     <motion.div
       initial="pageInitial"
