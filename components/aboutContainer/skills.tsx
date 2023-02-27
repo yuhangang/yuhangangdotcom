@@ -39,8 +39,8 @@ export default function Skills() {
         <br></br>
         <br></br>
         <h3>Programming Languages</h3>
-        <h4>Dart, Go, Javascript/Typescript, Python, C, Java/Kotlin, R</h4>
         <br></br>
+        Dart, Go, Javascript/Typescript, Python, C, Java/Kotlin, R<br></br>
         <br></br>
         <h3>Industry Skills</h3>
         <div className={styles.skillsTable}>
@@ -65,10 +65,9 @@ export default function Skills() {
         <br></br>
         <br></br>
         <h3>Software Tools</h3>
-        <h4>
-          PostgreSQL, Oracle SQL Developer, Git, Tableau, Adobe PhotoShop, Adobe
-          Premiere Pro
-        </h4>
+        <br></br>
+        PostgreSQL, Oracle SQL Developer, Git, Tableau, Adobe PhotoShop, Adobe
+        Premiere Pro
       </div>
     </motion.div>
   );

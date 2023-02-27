@@ -1,7 +1,7 @@
 import Box from "@material-ui/core/Box";
 import Fab from "@material-ui/core/Fab";
 import {
-  createMuiTheme,
+  createTheme,
   createStyles,
   makeStyles,
   Theme,
@@ -126,7 +126,7 @@ const actions = [
   },
 ];
 
-const theme = createMuiTheme({
+const theme = createTheme({
   overrides: {
     MuiButton: {
       root: {

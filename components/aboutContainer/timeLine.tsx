@@ -73,11 +73,7 @@ export default function TimeLine({
       }}
     >
       <div className={styles.work}>
-        <h2
-          style={{ maxWidth: "100vw", textOverflow: "clip", color: "#6fe9d5" }}
-        >
-          {title}
-        </h2>
+        <h2>{title}</h2>
 
         <ul className={`${tl.timeline}${styles.timeline}`}>
           {items ? items.map(TimeLineItem) : []}

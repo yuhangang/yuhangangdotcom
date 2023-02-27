@@ -115,19 +115,20 @@ $primary-color-hover: rgba(200,200,200);
     /*----- TIMELINE CONTENT -----*/
 
     .timeline_content {
-        background-color: rgba(255,255,255,0.1);
+       
         overflow:clip;
         padding: 2px 5px;
         padding-left:10px;
         padding-bottom: 15px;
         border-radius: 10px;
         transition:0.5s;
+        font-weight:300;
         p:last-child {
             margin-bottom: 0;
         }
     }
     .timeline_content:hover{
-        background-color: rgba(255,255,255,0.2);
+        background-color: rgba(40,40,40);
     }
 
     /*----- TIMELINE PERIOD -----*/
