@@ -1,30 +1,24 @@
-import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
+import Head from "next/head";
+import Layout, { siteTitle } from "../src/components/layout";
 
+import AboutContainer from "../src/components/aboutContainer/aboutContainer";
 
-import AboutContainer from '../components/aboutContainer/aboutContainer'
+import styles from "../styles/page_styles/projects.module.scss";
+import React from "react";
+import TimeLine from "../src/components/aboutContainer/timeLine";
+import ResponsiveComponent from "../src/components/responsiveComponent/responsive";
 
-import styles from '../styles/page_styles/projects.module.scss'
-import React from 'react'
-import TimeLine from '../components/aboutContainer/timeLine'
-import ResponsiveComponent from '../components/responsiveComponent/responsive';
+import GithubLink from "../src/components/profile_link/github_link";
 
-import GithubLink from "../components/profile_link/github_link";
+const title: string = siteTitle + " - About this Website";
 
-const title:string = siteTitle+" - About this Website";
-
-export default function Home({
-}) {
+export default function Home({}) {
   return (
-
     <Layout home>
-
       <Head>
         <title>{title}</title>
-
       </Head>
       <div className={styles.mainContainer}>
-
         {AboutContainer({
           img_url: "/images/website.png",
           position1: 50,
@@ -34,72 +28,60 @@ export default function Home({
               {ResponsiveComponent(
                 <div className={styles.projectIntroTile}>
                   <h1>About This Website</h1>
-               My personal blog,
-               the first website designed and developed by me. I choose Next.js as framework and wrote code in Typescript, all of the pages is static generated. The user interface is responsive which compatible with phones, tablet and PCs.
-              
-               
+                  My personal blog, the first website designed and developed by
+                  me. I choose Next.js as framework and wrote code in
+                  Typescript, all of the pages is static generated. The user
+                  interface is responsive which compatible with phones, tablet
+                  and PCs.
                 </div>
-              )
-
-              }
-
-            </div>
-
-
-
-
-          ]
+              )}
+            </div>,
+          ],
         })}
         {GithubLink("https://github.com/yuhangang/yuhangangdotcom")}
-        {ResponsiveComponent([TimeLine({
-          title: "Time Line",
-          items: [
-            {
-              dateTime: "20/9/2020",title: "Fixed bugs and improve user interface",
-            },
-            {
-            dateTime: "6/9/2020", title: "Publish of first version",
-    
-            detail: <div>
-                Deployed website to Vercel
-            </div>
-          },
-          {
-            dateTime: "mid 7/2020 - early 9/2020", title: "Learning and Development",
-           
-            detail: <div>
+        {ResponsiveComponent([
+          TimeLine({
+            title: "Time Line",
+            items: [
+              {
+                dateTime: "20/9/2020",
+                title: "Fixed bugs and improve user interface",
+              },
+              {
+                dateTime: "6/9/2020",
+                title: "Publish of first version",
 
-              <ul>Learning... Building... Fixing... Refactoring...</ul>
-            </div>
-          },
-          ]
-        }),
-        <div>
-          <h2>Learning Outcome</h2>
-          <h3>What did I learn?</h3>
-          <ul>- Experience in Typescript for web development</ul>
-          <ul>- Responsive UI/UX design, improve user experience accross different screen sizes and ratios</ul>
-          <ul>- Familiar with HTML and CSS/SASS, built most components of this websites from scratch</ul>
-          <ul>- build reusable components for React.js frameworks</ul>
-          <ul></ul>
-    
+                detail: <div>Deployed website to Vercel</div>,
+              },
+              {
+                dateTime: "mid 7/2020 - early 9/2020",
+                title: "Learning and Development",
 
-
-         
-        </div>]
-        )}
-
-
+                detail: (
+                  <div>
+                    <ul>Learning... Building... Fixing... Refactoring...</ul>
+                  </div>
+                ),
+              },
+            ],
+          }),
+          <div>
+            <h2>Learning Outcome</h2>
+            <h3>What did I learn?</h3>
+            <ul>- Experience in Typescript for web development</ul>
+            <ul>
+              - Responsive UI/UX design, improve user experience accross
+              different screen sizes and ratios
+            </ul>
+            <ul>
+              - Familiar with HTML and CSS/SASS, built most components of this
+              websites from scratch
+            </ul>
+            <ul>- build reusable components for React.js frameworks</ul>
+            <ul></ul>
+          </div>,
+        ])}
       </div>
-
-
-
-
-
-
-
-
     </Layout>
-  )
+  );
 }
-

@@ -4,8 +4,8 @@ import React from "react";
 //import ImageCarousel from "../components/carousel"
 import AwesomeSlider from "react-awesome-slider";
 import AwsSliderStyles from "../styles/page_styles/styles.module.scss";
-import { siteTitle } from "../components/layout";
-import DesNav from "../components/navBar/NavBar";
+import { siteTitle } from "../src/components/layout";
+import DesNav from "../src/components/navBar/NavBar";
 import styles from "../styles/page_styles/project.module.scss";
 
 const postVariants = {

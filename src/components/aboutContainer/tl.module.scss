@@ -121,12 +121,12 @@ $primary-color: rgb(151, 37, 37);
 
 .timeline_content {
   overflow: clip;
-  padding: 2px 5px;
   padding-left: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   border-radius: 10px;
   transition: 0.5s;
   font-weight: 300;
+
   p:last-child {
     margin-bottom: 0;
   }
@@ -137,6 +137,9 @@ $primary-color: rgb(151, 37, 37);
   }
 
   color: rgba(230, 230, 230);
+  @media (min-width: 768px) {
+    padding-bottom: 15px;
+  }
 }
 
 .timeline_content:hover {

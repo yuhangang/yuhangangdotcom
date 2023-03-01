@@ -71,7 +71,7 @@ export default function TimeLine({
     >
       <div className={styles.work}>
         <h2>{title}</h2>
-
+        <br></br>
         <ul className={`${tl.timeline}${styles.timeline}`}>
           {items ? items.map(TimeLineItem) : []}
         </ul>

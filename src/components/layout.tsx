@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import utilStyles from "../styles/utils.module.css";
+import utilStyles from "../../styles/utils.module.css";
 import styles from "./layout.module.scss";
 import Nav from "./navBar/NavBar";
 import ProfileLink from "./profile_link/profile_link";

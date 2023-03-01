@@ -1,10 +1,10 @@
 import Head from "next/head";
 import React from "react";
-import AboutContainer from "../components/aboutContainer/aboutContainer";
-import Skills from "../components/aboutContainer/skills";
-import TimeLine from "../components/aboutContainer/timeLine";
-import Layout, { siteTitle } from "../components/layout";
-import ResponsiveComponent from "../components/responsiveComponent/responsive";
+import AboutContainer from "../src/components/aboutContainer/aboutContainer";
+import Skills from "../src/components/aboutContainer/skills";
+import TimeLine from "../src/components/aboutContainer/timeLine";
+import Layout, { siteTitle } from "../src/components/layout";
+import ResponsiveComponent from "../src/components/responsiveComponent/responsive";
 import styles from "../styles/page_styles/about.module.scss";
 
 const title: string = siteTitle + " - About Me";
@@ -45,7 +45,12 @@ export default function About({}) {
             title="Experiences"
             items={[
               {
-                dateTime: "Feb 2022 - now",
+                dateTime: "Mar 2023 - Now",
+                title: "App Developer, Lumi News",
+                detail: <></>,
+              },
+              {
+                dateTime: "Feb 2022 - Feb 2023",
                 title: "Software Engineer, Snappymob Sdn Bhd",
                 detail: (
                   <>

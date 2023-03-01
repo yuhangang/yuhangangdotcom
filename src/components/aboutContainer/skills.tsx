@@ -38,12 +38,12 @@ export default function Skills() {
           </a>
         </div>
         <br></br>
-        <br></br>
         <h3>Programming Languages</h3>
         <br></br>
         Dart, Go, Javascript/Typescript, Python, C, Java/Kotlin, R<br></br>
         <br></br>
         <h3>Industry Skills</h3>
+        <br></br>
         <div className={styles.skillsTable}>
           <div className={styles.skillsItem}>
             <img src={"./icons/flutter.svg"}></img>
