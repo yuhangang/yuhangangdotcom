@@ -20,7 +20,7 @@ export default function About({}) {
         <ResponsiveComponent>
           <p>
             {" "}
-            Yu Hang Ang ,{age}, an software engineer based in Kuala Lumpur,
+            Yu Hang Ang , {age}, software engineer based in Kuala Lumpur,
             Malaysia.
           </p>
           <br />

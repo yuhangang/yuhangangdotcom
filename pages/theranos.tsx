@@ -24,7 +24,7 @@ export default function Home({}) {
           position2: 70,
           children: [
             <div style={{ bottom: 0 }}>
-              {ResponsiveComponent(
+              <ResponsiveComponent>
                 <div className={styles.projectIntroTile}>
                   <h1>Theranos, a Flutter HealthCare app</h1>
                   An Flutter App connecting FHIR server which stores electronic
@@ -34,13 +34,13 @@ export default function Home({}) {
                   pressure values of the selected patients in both table and
                   chart format.
                 </div>
-              )}
+              </ResponsiveComponent>
             </div>,
           ],
         })}
         {GithubLink("https://github.com/yuhangang/theranos")}
-        {ResponsiveComponent([
-          TimeLine({
+        <ResponsiveComponent>
+          {TimeLine({
             title: "Time Line",
             items: [
               {
@@ -74,15 +74,17 @@ export default function Home({}) {
                 ),
               },
             ],
-          }),
+          })}
+          ,
           <div>
             <h2>Learning Outcomes</h2>
             <h3>What did I learn?</h3>
             <ul>- Cross Platform Application Development</ul>
             <ul>- Experience of teamwork in software development </ul>
             <ul>- building reusable widgets for applications</ul>
-          </div>,
-        ])}
+          </div>
+          ,
+        </ResponsiveComponent>
       </div>
     </Layout>
   );
