@@ -1,8 +1,8 @@
-import styles from './responsive.module.scss';
+import { FC, PropsWithChildren } from "react";
+import styles from "./responsive.module.scss";
 
-export default function ResponsiveComponent(children:Array<JSX.Element> | JSX.Element):JSX.Element{
-
-    return (
-    <div className={styles.responsivecomponent}>{children}</div>
-    );
+export default function ResponsiveComponent(props: {
+  children: React.ReactNode;
+}): JSX.Element {
+  return <div className={styles.responsivecomponent}>{props.children}</div>;
 }

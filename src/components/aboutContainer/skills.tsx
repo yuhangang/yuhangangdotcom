@@ -4,18 +4,7 @@ import styles from "./timeLine.module.scss";
 
 export default function Skills() {
   return (
-    <motion.div
-      initial="pageInitial"
-      animate="pageAnimate"
-      variants={{
-        pageInitial: {
-          opacity: 0,
-        },
-        pageAnimate: {
-          opacity: 1,
-        },
-      }}
-    >
+    <div>
       <div className={styles.skills}>
         <h2>Education and Skills</h2>
         <br></br>
@@ -45,20 +34,20 @@ export default function Skills() {
         <h3>Industry Skills</h3>
         <br></br>
         <div className={styles.skillsTable}>
-          <div className={styles.skillsItem}>
+          <div className={styles.skillsItem} key={"flutter"}>
             <img src={"./icons/flutter.svg"}></img>
             <h4>Flutter</h4>
           </div>
           <div className={styles.skillsItem}>
-            <img src={"./icons/go.svg"}></img>
+            <img src={"./icons/go.svg"} key={"go"}></img>
             <h4>Go</h4>
           </div>
-          <div className={styles.skillsItem}>
+          <div className={styles.skillsItem} key={"nextjs"}>
             <img src={"./icons/next-js.svg"}></img>
             <h4>Next.js</h4>
           </div>
 
-          <div className={styles.skillsItem}>
+          <div className={styles.skillsItem} key={"android"}>
             <img src={"./icons/android.svg"}></img>
             <h4>Android</h4>
           </div>
@@ -70,6 +59,6 @@ export default function Skills() {
         PostgreSQL, Oracle SQL Developer, Git, Tableau, Adobe PhotoShop, Adobe
         Premiere Pro
       </div>
-    </motion.div>
+    </div>
   );
 }

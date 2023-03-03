@@ -2,6 +2,7 @@
 
 html,
 body {
+  background-color: #CD3E15;
   padding: 0;
   margin: 0;
   font-family:Lato;
@@ -10,6 +11,7 @@ body {
   font-weight: 350;
   line-height: 150%;
   letter-spacing:1px;
+  scroll-behavior: smooth;
 }
 
 

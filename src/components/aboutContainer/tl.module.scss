@@ -61,6 +61,7 @@ $primary-color: rgb(151, 37, 37);
   margin: 20px 0px;
   padding-left: 25px;
   position: relative;
+  list-style-type: none;
   &:last-child {
     padding-bottom: 0;
   }
@@ -240,7 +241,6 @@ $primary-color: rgb(151, 37, 37);
     }
     .timeline_item {
       padding-bottom: 40px;
-      overflow: hidden;
     }
     .timeline_marker {
       position: absolute;

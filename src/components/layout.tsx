@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import { Color } from "react-bootstrap/esm/types";
 import utilStyles from "../../styles/utils.module.css";
 import styles from "./layout.module.scss";
 import Nav from "./navBar/NavBar";
@@ -11,13 +12,18 @@ export default function Layout({
   children,
   home,
   showNavbar,
+  color,
 }: {
   children: React.ReactNode;
   home?: boolean;
   showNavbar?: boolean;
+  color?: string;
 }) {
   return (
     <div className={styles.background}>
+      <meta name="theme-color" content={color} />
+      <meta name="msapplication-navbutton-color" content={color} />
+      <meta name="apple-mobile-web-app-status-bar-style" content={color} />
       {showNavbar !== false ? <Nav></Nav> : null}
 
       <div className={styles.container}>

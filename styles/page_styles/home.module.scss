@@ -1,18 +1,8 @@
-
-
 .mainContainer {
-  transition: 0.5s;
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-
+  padding-top: 6vh;
 }
 
-
 .mainContainerItems {
-
   position: absolute;
   display: grid;
   flex-wrap: wrap;
@@ -23,7 +13,12 @@
 
   margin-top: auto;
   margin-bottom: auto;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(30, 30, 30, 0.2)), url('/images/IMG_6812.jpg') no-repeat;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1),
+      rgba(30, 30, 30, 0.2)
+    ),
+    url("/images/IMG_6812.jpg") no-repeat;
 
   background-position: 60% 0%;
   background-size: cover;
@@ -31,10 +26,10 @@
 
 .mainContainerTitle {
   user-select: none;
-  font-family: 'Audrey';
+  font-family: "Audrey";
   text-transform: uppercase;
   letter-spacing: 3px;
-  text-shadow: 0 0 15px rgba(50,50,50,0.3), 0 0 10px rgba(50,50,50,.4);
+  text-shadow: 0 0 15px rgba(50, 50, 50, 0.3), 0 0 10px rgba(50, 50, 50, 0.4);
   margin: 0 auto;
   margin-bottom: 20px;
   align-items: center;
@@ -44,12 +39,12 @@
   color: white;
 
   cursor: pointer;
-  
 }
 
 .homeButton {
   letter-spacing: 2px;
-  box-shadow: 0 0 20px rgba(255,255,255,0.1), 0 0 20px rgba(255,255,255,.1);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1),
+    0 0 20px rgba(255, 255, 255, 0.1);
   margin: 5px auto;
   font-size: 24px;
   display: inline-block;
@@ -67,7 +62,11 @@
   text-shadow: 2px 2px 5px rgba(75, 75, 75, 0.7);
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
-  background-image: linear-gradient(300deg, rgba(50, 50, 50, 0.7) 0%, rgba(70, 70, 70, 0.7) 74%);
+  background-image: linear-gradient(
+    300deg,
+    rgba(50, 50, 50, 0.7) 0%,
+    rgba(70, 70, 70, 0.7) 74%
+  );
 }
 
 .homeButton:hover {
@@ -75,13 +74,11 @@
   //border: 2px solid #ffffff;
 }
 
-
 @media screen and (max-width: 45rem) {
-
   .homeButton {
     margin: 3px 0;
     font-size: 24px;
-    
+
     display: inline-block;
     vertical-align: center;
     align-items: center;
@@ -94,29 +91,36 @@
     //border: 2px solid rgba(222,222,222);
   }
 
-
-
   .mainContainerItems {
     padding-left: 5%;
     padding-right: 5%;
     height: 100%;
     width: 100%;
     padding-top: 40vh;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(68, 49, 49, 0.3)), url('/images/IMG_6812.jpg') no-repeat;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.1),
+        rgba(68, 49, 49, 0.3)
+      ),
+      url("/images/IMG_6812.jpg") no-repeat;
     background-position: 60% 0%;
     background-size: cover;
   }
-.placeholder{
+  .placeholder {
     position: absolute;
     height: 100%;
     width: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(68, 49, 49, 0.3)), url('/images/placeholder/IMG_6812.jpg') no-repeat;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.1),
+        rgba(68, 49, 49, 0.3)
+      ),
+      url("/images/placeholder/IMG_6812.jpg") no-repeat;
     background-position: 60% 0%;
     background-size: cover;
   }
 
   .mainContainerTitle {
-
     width: 100%;
 
     margin: 0 auto;
@@ -127,23 +131,15 @@
     line-height: 50px;
     font-size: 50px;
     color: white;
-    
   }
-  .mainContainerTitle{
-    text-shadow: 2px 2px 2px rgba(206,89,55,0);
- 
-text-shadow: 0 0 15px rgba(50,50,50,0.4), 0 0 10px rgba(50,50,50,.5);
+  .mainContainerTitle {
+    text-shadow: 2px 2px 2px rgba(206, 89, 55, 0);
+
+    text-shadow: 0 0 15px rgba(50, 50, 50, 0.4), 0 0 10px rgba(50, 50, 50, 0.5);
   }
-
-
 }
-
 
 .mainContainerItems:hover,
 .mainContainerTitle:hover {
   color: rgba(220, 220, 220);
 }
-
-
-
-

@@ -25,20 +25,7 @@ function TimeLineItem(props: TimeLineData): JSX.Element {
 
   return (
     <li className={tl.timeline_item}>
-      <div className={tl.timeline_info}>
-        <div
-          style={{
-            wordBreak: "break-word",
-            overflowWrap: "break-word",
-            whiteSpace: "pre-wrap",
-            textOverflow: "ellipsis",
-            maxWidth: "80vw",
-            fontWeight: 300,
-          }}
-        >
-          {props.dateTime}
-        </div>
-      </div>
+      <div className={tl.timeline_info}>{props.dateTime}</div>
       <div className={tl.timeline_marker}></div>
       <div className={tl.timeline_content}>
         <h3 className={tl.timeline_title}>{props.title}</h3>

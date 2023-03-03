@@ -1,32 +1,19 @@
-
-    
-    .responsivecomponent{
-    width: 100%;
-    max-width: 120rem;
-    height: auto;
-    display: block;
-    align-items: center;
-
-  overflow:clip;
-    align-items: top center;
-    align-self: center; 
-    padding-left: 5%;
-             padding-right:5%;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-      
-    }
-    @media only screen and (min-width: 45rem) and (max-width: 149rem){
-        .responsivecomponent{
-             padding-left: 10%;
-             padding-right:10%;
-          }
-        }
-        
-        @media only screen and (min-width: 100rem) {
-        .responsivecomponent{
-          padding-left: 20%;
-          padding-right:20%;
-       }
-          }
-        
+.responsivecomponent {
+  width: 100%;
+  max-width: 100rem;
+  display: block;
+  align-items: center;
+  margin: auto;
+  align-items: top center;
+  align-self: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+@media only screen and (min-width: 45rem) {
+  .responsivecomponent {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}

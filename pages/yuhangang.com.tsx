@@ -25,7 +25,7 @@ export default function Home({}) {
           position2: 50,
           children: [
             <div style={{ bottom: 0 }}>
-              {ResponsiveComponent(
+              <ResponsiveComponent>
                 <div className={styles.projectIntroTile}>
                   <h1>About This Website</h1>
                   My personal blog, the first website designed and developed by
@@ -34,13 +34,13 @@ export default function Home({}) {
                   interface is responsive which compatible with phones, tablet
                   and PCs.
                 </div>
-              )}
+              </ResponsiveComponent>
             </div>,
           ],
         })}
         {GithubLink("https://github.com/yuhangang/yuhangangdotcom")}
-        {ResponsiveComponent([
-          TimeLine({
+        <ResponsiveComponent>
+          {TimeLine({
             title: "Time Line",
             items: [
               {
@@ -64,7 +64,7 @@ export default function Home({}) {
                 ),
               },
             ],
-          }),
+          })}
           <div>
             <h2>Learning Outcome</h2>
             <h3>What did I learn?</h3>
@@ -79,8 +79,8 @@ export default function Home({}) {
             </ul>
             <ul>- build reusable components for React.js frameworks</ul>
             <ul></ul>
-          </div>,
-        ])}
+          </div>
+        </ResponsiveComponent>
       </div>
     </Layout>
   );

@@ -1,35 +1,31 @@
 .mainContainer {
-
   background-image: transparent;
-
-  width: 100%;
   min-height: 100vh;
-  height: auto;
   overflow: auto;
   margin: auto auto;
-   backdrop-filter: blur(10px); 
+  backdrop-filter: blur(10px);
+  margin-top: 8vh;
 }
-
-
 
 .expanded {
   width: 100%;
-  
 }
-
-
 
 .profilePic {
   height: 25vw;
   width: 25vw;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.1),
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.5)
+  );
   position: relative;
   object-fit: contain;
   object-position: center center;
   opacity: 1;
   transition-delay: 500ms;
 }
-
 
 .column {
   font-size: 1.2rem;
@@ -38,11 +34,8 @@
   padding: 5em 5em;
   width: 25em;
 
-
   width: 50%;
-
 }
-
 
 /* Clear floats after the columns */
 .row {
@@ -66,16 +59,12 @@
   transition: 0.5s;
 }
 
-
-
-
 .profileContainer:hover .intro:hover {
   color: rgba(220, 220, 220);
   text-shadow: 5px 5px 10px rgba(200, 200, 200, 0.4);
 }
 
 .profile_picture {
-
   margin: auto 1rem;
   float: left;
   width: 10rem;
@@ -109,19 +98,17 @@
   }
 
   .profile_picture {
-    position:relative;
+    position: relative;
     float: center;
-    margin:  auto auto;
+    margin: auto auto;
     align-items: center;
     text-align: center;
-
-  
   }
-  .profielContainer{
- display: inline-block;
-align-items: center;
+  .profielContainer {
+    display: inline-block;
+    align-items: center;
   }
-  .profilebox{
-    margin:auto;
+  .profilebox {
+    margin: auto;
   }
 }

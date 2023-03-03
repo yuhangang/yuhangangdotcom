@@ -1,17 +1,17 @@
 $primaryColor: rgba(65, 65, 65);
-$secondaryColor:rgba(85, 85, 85);
+$secondaryColor: rgba(85, 85, 85);
 
 .h3 {
-vertical-align: middle;
+  vertical-align: middle;
   height: 20px;
-  width:100px;
+  width: 100px;
   text-align: left;
   margin-bottom: 15px;
- 
-padding-left:15px;
-visibility: center;
+
+  padding-left: 15px;
+  visibility: center;
   //text-transform: uppercase;
-  font-family: 'Audrey';
+  font-family: "Audrey";
   letter-spacing: 0.01em;
   color: white;
   transition: 0.4s;
@@ -23,24 +23,19 @@ visibility: center;
   font-size: 50px;
 }
 .h3:hover {
-  color:rgba(255, 255, 255,0.8);
- 
+  color: rgba(255, 255, 255, 0.8);
 }
-
 
 .container {
   height: 5rem;
   width: 100%;
   backdrop-filter: blur(4px);
-
 }
 
 .navbar {
-
   transition: 0.5s;
 
   &__container {
-
     backdrop-filter: blur(4px);
     display: block;
 
@@ -49,7 +44,11 @@ visibility: center;
   }
 
   &__flex {
-    background: linear-gradient(to bottom, rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0));
+    background: linear-gradient(
+      to bottom,
+      rgba(40, 40, 40, 0.5),
+      rgba(40, 40, 40, 0)
+    );
     position: relative;
     padding: 1.5vh 5vw;
     max-width: 100%;
@@ -62,8 +61,7 @@ visibility: center;
     align-items: center;
   }
 
-
-  &__left{
+  &__left {
     vertical-align: center;
     height: 50px;
     flex: 1 1 30%;
@@ -79,7 +77,6 @@ visibility: center;
     display: inline-block;
     width: 100px;
     height: 50px;
-
 
     background-size: contain;
     margin-right: 15px;
@@ -107,7 +104,7 @@ visibility: center;
     font-size: 18px;
     font-weight: 500;
     color: #c0c7da;
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
     word-spacing: 1px;
 
     &:focus {
@@ -125,12 +122,14 @@ visibility: center;
     outline: none;
 
     border: none;
-    background: #43cb83 url('https://res.cloudinary.com/ajayrawat/image/upload/v1508734484/search_icon_pr2sma.svg') no-repeat;
+    background: #43cb83
+      url("https://res.cloudinary.com/ajayrawat/image/upload/v1508734484/search_icon_pr2sma.svg")
+      no-repeat;
     background-size: 17px;
     background-position: center;
     cursor: pointer;
     transform: translate(0, 0);
-    transition: background-color .2s linear;
+    transition: background-color 0.2s linear;
     will-change: background-color;
 
     &:hover,
@@ -146,24 +145,20 @@ visibility: center;
 
   &__toggler {
     padding: 10px;
-
   }
 
   &__links {
-    letter-spacing:2px;
+    letter-spacing: 2px;
     list-style: none;
 
     margin: 0;
     float: right;
 
     li {
-
       position: relative;
       display: inline-block;
 
-
       a {
-
         vertical-align: center;
         padding: 10px 20px;
         margin: 20px 10px;
@@ -178,16 +173,11 @@ visibility: center;
         border-style: solid;
         border-color: transparent;
 
-   
         &:hover {
-
-
           border-color: rgba(230, 230, 230);
-
         }
       }
     }
-
   }
 
   &__hamberger {
@@ -196,19 +186,15 @@ visibility: center;
     padding: 10px;
     width: 50px;
     height: 50px;
-    background: url('/icons/ui/menu.svg') no-repeat;
-    -webkit-transition: -webkit-transform .8s ease-in-out;
-    -ms-transition: -ms-transform .8s ease-in-out;
-    transition: transform .8s ease-in-out;  
-    
-
+    background: url("/icons/ui/menu.svg") no-repeat;
+    -webkit-transition: -webkit-transform 0.8s ease-in-out;
+    -ms-transition: -ms-transform 0.8s ease-in-out;
+    transition: transform 0.8s ease-in-out;
 
     background-size: cover;
-
   }
 
   &__toggler__label {
-
     display: none;
 
     font-family: inherit;
@@ -225,7 +211,7 @@ visibility: center;
   }
 
   &__sublinks {
-    letter-spacing:1px;
+    letter-spacing: 1px;
     transition: 0.5s;
     display: none;
     position: absolute;
@@ -235,54 +221,45 @@ visibility: center;
     left: 10;
     margin-top: 10px;
     padding: 0;
-    
-    
 
     li {
       backdrop-filter: blur(5px);
-      background-color: rgba(50,50,50,0.7);
+      background-color: rgba(50, 50, 50, 0.7);
       font-size: 16px;
       width: 100%;
       display: block;
       white-space: nowrap;
-      margin:none;
-      
+      margin: none;
 
       &:first-child {
-        padding-top:5px;
+        padding-top: 5px;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
       }
       &:last-child {
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
-        padding-bottom:2px;
+        padding-bottom: 2px;
       }
-
 
       a {
         margin: 0px;
         font-size: 16px;
         display: block;
         padding: 10 px 15px !important;
-        
-        border:none;
-        
-      }
 
-      
+        border: none;
+      }
     }
 
     li:hover {
-      background-color: rgba(50,50,50,0.9);
+      background-color: rgba(50, 50, 50, 0.9);
     }
   }
-
 
   &__links li:hover &__sublinks {
     transition: 0.5s;
     display: block;
-
   }
 }
 
@@ -337,62 +314,57 @@ visibility: center;
   }
 }
 */
-.img{
-  height:54px;
-  width:225px;
-  padding-left:10px;
+.img {
+  height: 54px;
+  width: 225px;
+  padding-left: 10px;
 }
 
 @media screen and (max-width: 65rem) {
-  .img{
-    height:43px;
-    width:220px;
-    padding-left:10px;
+  .img {
+    height: 43px;
+    width: 220px;
+    padding-left: 10px;
   }
 
-  
   .h3 {
     font-size: 35px;
     vertical-align: middle;
-      height: 50px;
-      line-height: 50px;
-      text-align: left;
-      margin-bottom: 15px;
-    padding-left:15px;
+    height: 50px;
+    line-height: 50px;
+    text-align: left;
+    margin-bottom: 15px;
+    padding-left: 15px;
     visibility: center;
-      //text-transform: uppercase;
-      font-family: 'Audrey';
-      letter-spacing: 0.01em;
-      color: white;
-      transition: 0.4s;
-      cursor: pointer;
-    }
+    //text-transform: uppercase;
+    font-family: "Audrey";
+    letter-spacing: 0.01em;
+    color: white;
+    transition: 0.4s;
+    cursor: pointer;
+  }
 
   .navbar {
-    &__left{
+    &__left {
       position: fixed;
-      z-index:9999;
-      width:50%;
-      padding-top:2px;
+      z-index: 9999;
+      width: 50%;
+      padding-top: 2px;
       padding-left: 10px;
     }
     &__right {
       padding-top: 0px;
       position: fixed;
       z-index: 88;
-      width:100%;
+      width: 100%;
     }
-    &__flex{
+    &__flex {
       padding: 0;
       backdrop-filter: blur(1px);
-     
-      
     }
     &__hamburger {
-    
-      display:inline;
+      display: inline;
       margin: 0 auto 10px;
-
     }
 
     &__search {
@@ -406,32 +378,27 @@ visibility: center;
 
     &__toggler__input {
       width: 100%;
-      
+
       display: flex;
 
-      &:checked+.navbar__links {
-        
+      &:checked + .navbar__links {
         display: flex;
         opacity: 1;
         transition: all 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
         transform: translateY(0);
       }
 
-      &:checked~.navbar__flex {
+      &:checked ~ .navbar__flex {
         background-color: white;
-        
       }
-
-  
-
     }
 
     &__links {
       user-select: none;
-      overflow:visible;
+      overflow: visible;
       position: static;
       backdrop-filter: blur(5px);
-      width:100%;
+      width: 100%;
       transform: translateY(-200%);
       opacity: 0;
       transition: all 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
@@ -444,9 +411,8 @@ visibility: center;
       background-color: rgba(255, 255, 255, 0.9);
 
       li {
-        
         border-bottom: 1px solid rgba(200, 200, 200);
-        padding-top:10px;
+        padding-top: 10px;
         &:last-child {
           padding-bottom: 10px;
         }
@@ -459,19 +425,15 @@ visibility: center;
       }
     }
 
-
     &__sublinks {
-
-
       display: block;
       position: static;
       box-shadow: none;
       width: 100%;
-      
-      background-color:rgba(230, 230, 230);
+
+      background-color: rgba(230, 230, 230);
       transition: 0.5s;
-      
-      
+
       &:last-child {
         padding-bottom: 3px;
       }
@@ -481,22 +443,18 @@ visibility: center;
         background-color: transparent;
         border-bottom: 0px solid;
         padding: 7px 0px;
-       
       }
       li:hover {
-      background-color:transparent;
+        background-color: transparent;
       }
 
       a {
-        background-color:transparent;
+        background-color: transparent;
         color: rgba(50, 50, 50);
         padding: 10px 0px;
         border-color: transparent;
         font-size: 16px;
-
       }
-      
     }
   }
 }
-

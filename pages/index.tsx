@@ -16,31 +16,14 @@ export default function About({}) {
       <Head>
         <title>{title}</title>
       </Head>
-      <div className={styles.mainContainer}>
-        {AboutContainer({
-          img_url: "/images/IMG_6812.jpg",
-          position1: 0,
-          position2: 70,
-          children: [
-            <div style={{ paddingTop: "25vh" }}>
-              {ResponsiveComponent([
-                <div className={styles.profileContainer}>
-                  <a target="_blank" className={styles.profilebox}>
-                    <img
-                      src="/images/profile.jpg"
-                      className={styles.profile_picture}
-                    ></img>
-                  </a>
-                  <div className={styles.intro}>
-                    Yu Hang Ang ,{age}, an software engineer based in Kuala
-                    Lumpur, Malaysia.
-                  </div>
-                </div>,
-              ])}
-            </div>,
-          ],
-        })}
-        {ResponsiveComponent([
+      <div>
+        <ResponsiveComponent>
+          <p>
+            {" "}
+            Yu Hang Ang ,{age}, an software engineer based in Kuala Lumpur,
+            Malaysia.
+          </p>
+          <br />
           <TimeLine
             title="Experiences"
             items={[
@@ -107,10 +90,14 @@ export default function About({}) {
                 detail: "Started to study for computer science degree",
               },
             ]}
-          />,
-          <Skills />,
-        ])}
+          />
+
+          <Skills />
+        </ResponsiveComponent>
       </div>
     </Layout>
   );
 }
+/*
+ 
+*/
