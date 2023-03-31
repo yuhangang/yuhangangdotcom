@@ -40,7 +40,7 @@
 .bottomLink {
   overflow: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   padding-right: 0.7rem;
   background: #1b1b1b;
   height: 4em;
@@ -83,7 +83,6 @@
   background: black;
   align-items: top center;
   position: relative;
-  padding-top: 4rem;
 }
 
 .header {

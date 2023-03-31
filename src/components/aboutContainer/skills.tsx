@@ -27,31 +27,9 @@ export default function Skills() {
           </a>
         </div>
         <br></br>
-        <h3>Programming Languages</h3>
+        <h3>Skills</h3>
         <br></br>
-        Dart, Go, Javascript/Typescript, Python, C, Java/Kotlin, R<br></br>
-        <br></br>
-        <h3>Industry Skills</h3>
-        <br></br>
-        <div className={styles.skillsTable}>
-          <div className={styles.skillsItem} key={"flutter"}>
-            <img src={"./icons/flutter.svg"}></img>
-            <h4>Flutter</h4>
-          </div>
-          <div className={styles.skillsItem}>
-            <img src={"./icons/go.svg"} key={"go"}></img>
-            <h4>Go</h4>
-          </div>
-          <div className={styles.skillsItem} key={"nextjs"}>
-            <img src={"./icons/next-js.svg"}></img>
-            <h4>Next.js</h4>
-          </div>
-
-          <div className={styles.skillsItem} key={"android"}>
-            <img src={"./icons/android.svg"}></img>
-            <h4>Android</h4>
-          </div>
-        </div>
+        Flutter, Go, Javascript/Typescript, Python, C, Kotlin, Swift, R<br></br>
         <br></br>
         <br></br>
         <h3>Software Tools</h3>

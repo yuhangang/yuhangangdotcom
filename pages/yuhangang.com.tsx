@@ -8,7 +8,7 @@ import React from "react";
 import TimeLine from "../src/components/aboutContainer/timeLine";
 import ResponsiveComponent from "../src/components/responsiveComponent/responsive";
 
-import GithubLink from "../src/components/profile_link/github_link";
+import GithubLink from "../src/components/layout/profile_link/github_link";
 
 const title: string = siteTitle + " - About this Website";
 

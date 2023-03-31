@@ -3,20 +3,23 @@ import React from "react";
 import { Color } from "react-bootstrap/esm/types";
 import utilStyles from "../../styles/utils.module.css";
 import styles from "./layout.module.scss";
-import Nav from "./navBar/NavBar";
-import ProfileLink from "./profile_link/profile_link";
+import Nav from "./layout/navBar/NavBar";
+import ProfileLink from "./layout/profile_link/profile_link";
+
 const name = "Yuhangang";
 export const siteTitle = "yuhangang";
 
 export default function Layout({
   children,
   home,
-  showNavbar,
+  showNavbar = true,
+  showFooter = true,
   color,
 }: {
   children: React.ReactNode;
   home?: boolean;
   showNavbar?: boolean;
+  showFooter?: boolean;
   color?: string;
 }) {
   return (
@@ -44,7 +47,7 @@ export default function Layout({
         <main>{children}</main>
       </div>
 
-      {showNavbar !== false ? (
+      {showFooter !== false ? (
         <>
           <div className={styles.bottomLink}>
             <ProfileLink></ProfileLink>
